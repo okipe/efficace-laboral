@@ -1,0 +1,70 @@
+// Aquí pondremos el código que podamos clasificar como reutilizable:
+
+// El código reutilizable puede ser:
+// - botones
+// - barras de navegación
+// - estilos para secciones 
+// - tarjetas
+// - modals
+
+@use 'base' as *;
+
+.navbar {
+    // display: flex;
+    // justify-content: space-between;
+    margin: 20px 30px;
+
+    &__logo {
+        width: 190px;
+        
+        &:hover {
+            transform: scale(1.1, 1.1);
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__menu {
+        font-family: $text-font;
+        font-size: 20px;
+        font-weight: 400;
+        justify-content: space-around;
+        padding-left: 200px;
+        width: 100%;
+        
+        li {
+            list-style: none;
+
+            &:last-child {
+                background-color: $primary-2-color;
+                border-radius: 3rem;
+                padding: 1rem 3rem;
+            }
+        }
+    } /* end .navbar__menu */
+} /* end .navbar */
+
+.hero {
+    margin: 0 auto;
+    width: 1400px;
+    height: 500px;
+
+    &__text {
+        align-self: center;
+        margin: 0 10px;
+
+        &--big {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+
+    &__img {
+        justify-content: center;
+
+        img {
+            height: 500px;
+        }
+    }
+}
+

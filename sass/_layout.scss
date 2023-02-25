@@ -1,0 +1,34 @@
+// En este archivo deberán ir todas las reglas relacionadas con layout:
+
+// Se considera layout:
+// - grid
+// - contenedores
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        align-items: center;
+        // background-color: aqua;
+        display: flex;
+    }
+}
+
+main {
+    display: flex;
+    
+    // .hero {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+
+
+    }
+}

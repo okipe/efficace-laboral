@@ -6,16 +6,29 @@
 // - mixins
 // - clases generales
 
-// Colores
+/* Colores */
 $primary-1-color: #0624ae;
 $primary-2-color: #7ed956;
 $contrast-1-color: #2c2c4c;
 $background-1-color: #ffffff;
 
 
-// Fonts
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=League+Spartan:wght@200;400;700&display=swap');
 
 $title-font: 'Barlow Condensed', sans-serif;
 $text-font: 'League Spartan', sans-serif;
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
