@@ -17,6 +17,7 @@
 
 main {
     display: flex;
+    flex-direction: column;
     
     // .hero {
     //     display: flex;
@@ -26,9 +27,36 @@ main {
 
     .hero {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 100px;
+        grid-template-columns: repeat(2, minmax(200px, 600px));
+        justify-content: space-between;
+        // border: 1px solid #000;
 
+    }
 
+    .services {
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(75px, 500px));
+            grid-template-rows: 1fr;
+            // gap: 100px;
+            
+
+            &__item {
+                display: flex;
+                // border: 1px solid #000;
+
+            }
+        }
+    }
+
+    .we-are {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 600px));
+        gap: 50px;
+
+        &__text {
+            align-self: center;
+        }
     }
 }

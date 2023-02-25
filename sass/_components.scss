@@ -9,6 +9,45 @@
 
 @use 'base' as *;
 
+/* Buttons */
+
+.navbar__button--highlighted {
+    background-color: $primary-2-color;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+
+.section__button--highlighted {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: $primary-1-color;
+    font-family: $text-font;
+    font-size: 20px;
+    color: $background-1-color;
+    text-decoration: none;
+}
+
+/* Common titles */
+
+.section__title--side {
+    font-family: $title-font;
+    font-size: 56px;
+    margin-bottom: 36px;
+}
+
+.section__paragraph--side {
+    font-family: $text-font;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+/* Section styles */
+
 .navbar {
     // display: flex;
     // justify-content: space-between;
@@ -34,18 +73,22 @@
         li {
             list-style: none;
 
-            &:last-child {
-                background-color: $primary-2-color;
-                border-radius: 3rem;
-                padding: 1rem 3rem;
+            a {
+                text-decoration: none;
+                color: $text-color;
             }
+
+            &:last-child {
+                @extend .navbar__button--highlighted;
+            }
+    
         }
     } /* end .navbar__menu */
 } /* end .navbar */
 
 .hero {
-    margin: 0 auto;
-    width: 1400px;
+    margin: 0 50px;
+    // width: 1400px;
     height: 500px;
 
     &__text {
@@ -53,9 +96,17 @@
         margin: 0 10px;
 
         &--big {
-            font-family: 'Barlow Condensed', sans-serif;
+            font-family: $title-font;
             font-weight: 700;
-            font-size: 48px;
+            font-size: 56px;
+            margin: 40px 0;
+        }
+
+        &--small {
+            font-family: $text-font;
+            font-weight: normal;
+            font-size: 32px;
+            margin: 40px 0;
         }
     }
 
@@ -63,8 +114,63 @@
         justify-content: center;
 
         img {
-            height: 500px;
+            height: 100%;
+        }
+    }
+
+    &__button {
+        @extend .section__button--highlighted;
+    }
+}
+
+.services {
+    margin: 100px 50px;
+    // width: 1400px;
+    
+    &__title--big {
+        font-family: $title-font;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__container {
+    
+        &__item {
+        flex-direction: column;
+        justify-self: center;
+
+            img {
+                width: 200px;
+                margin: 0 auto;
+            }
+
+            p {
+                font-family: $text-font;
+                font-size: 28px;
+                font-weight: 400;
+                margin: 30px;
+                text-align: center;
+                align-items: center;
+            }
         }
     }
 }
 
+.we-are {
+    margin: 0 50px;
+    &__text {
+        h3 {
+            @extend .section__title--side;        
+        }
+
+        p {
+            @extend .section__paragraph--side;
+        }
+
+    }
+    &__img img{
+        width: 100%;
+    }
+
+}

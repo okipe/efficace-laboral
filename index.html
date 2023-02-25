@@ -9,14 +9,14 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="inicio">
         <nav class="navbar">
-            <img src="./assets/img/logo_desktop.png" alt="Logo Efficace laboral" class="navbar__logo">
+            <a href="#inicio"><img src="./assets/img/logo_desktop.png" alt="Logo Efficace laboral" class="navbar__logo"></a>
             <ul class="navbar__menu">
-                <li>Servicios</li>
-                <li>¿Quienes somos?</li>
-                <li>Contacto</li>
-                <li>Recursos gratis</li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#somos">¿Quienes somos?</a></li>
+                <li><a href="#home">Contacto</a></li>
+                <li><a href="#home">Recursos gratis</a></li>
             </ul>
         </nav>
     </header>
@@ -25,11 +25,42 @@
     <main>
         <div class="hero">
             <div class="hero__text">
-                <p class="hero__text--big">Impulsa tu talento y </br>haz realidad tus sueños</p>
+                <p class="hero__text--big">Impulsa tu talento y haz realidad tus sueños</p>
                 <p class="hero__text--small">Conviertete en un agente de cambio profesional con nuestros servicios</p>
+                <a href="#" class="hero__button">Descarga recursos gratuitos</a></button>
             </div>
             <div class="hero__img">
                 <img src="./assets/img/consultant-user-hands.svg" alt="Aspirantes a empleo recibiendo mentoría de consultores de empleabilidad">
+            </div> 
+        </div><!-- End .hero-->
+
+        <div class="services" id="servicios">
+            <div class="services__title--big">
+                <h2>Nuestros servicios</h2>
+            </div>
+            <div class="services__container">
+                <div class="services__container__item">
+                    <img src="./assets/img/workshop-icon.png" alt="Talleres de empleabilidad">
+                    <p>Talleres de empleabilidad</p>
+                </div>
+                <div class="services__container__item">
+                    <img src="./assets/img/coaching-icon.png" alt="Coaching">
+                    <p>Coaching ejecutivo</p>
+                </div>
+                <div class="services__container__item">
+                    <img src="./assets/img/personal-image-icon.png" alt="Imagen personal">
+                    <p>Imagen personal</p>
+                </div>
+            </div>
+        </div> <!-- End .services-->
+       
+        <div class="we-are" id="somos">
+            <div class="we-are__img">
+                <img src="./assets/img/meeting-room.jpg" alt="Personas en un taller">
+            </div>
+            <div class="we-are__text">
+                <h3>Somos Efficace</h3>
+                <p>Ofrecemos al público juvenil servicios orientados a su desarrollo profesional y personal a través de talleres, coaching y consultorías.</p>
             </div>
         </div>
     </main>
