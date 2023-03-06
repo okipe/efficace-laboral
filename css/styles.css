@@ -175,7 +175,7 @@ footer .footer__container {
   height: 100%;
 }
 .services {
-  margin: 100px 50px;
+  margin: 30px 50px;
 }
 .services__title--big {
   font-family: "Barlow Condensed", sans-serif;
@@ -201,7 +201,7 @@ footer .footer__container {
 }
 
 .we-are {
-  margin: 0 50px 100px 50px;
+  margin: 40px 50px 0 50px;
 }
 .we-are__img img {
   width: 100%;
@@ -274,5 +274,7 @@ footer .footer__container p {
 footer .footer__container img {
   margin-right: 20px;
 }
+
+/* MEDIA QUERIES */
 
 /*# sourceMappingURL=styles.css.map */
