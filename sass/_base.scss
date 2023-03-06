@@ -12,6 +12,7 @@ $primary-2-color: #7ed956;
 $contrast-1-color: #2c2c4c;
 $background-1-color: #ffffff;
 $text-color: #000000;
+$text-light-color: #ffffff;
 
 
 /* Fonts */
@@ -29,7 +30,15 @@ $text-font: 'League Spartan', sans-serif;
 
 html {
     scroll-behavior: smooth;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}

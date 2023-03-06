@@ -59,4 +59,35 @@ main {
             align-self: center;
         }
     }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 600px));
+        gap: 50px;
+
+        &__text {
+            align-self: center;
+        }
+    }
+
+    .resources__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 600px));
+        gap: 50px;
+
+        &__title {
+            align-self: center;
+        }
+    }
+}
+
+footer .footer__container {
+    display: flex;
+    justify-content: space-between;
 }
