@@ -7,12 +7,13 @@
 // - clases generales
 
 /* Colores */
-$primary-1-color: #0624ae;
-$primary-2-color: #7ed956;
+$primary-1-color: #7ed956;
+$primary-2-color: yellow;
 $contrast-1-color: #2c2c4c;
-$background-1-color: #ffffff;
-$text-color: #000000;
-$text-light-color: #ffffff;
+// $background-1-color: #0624ae;
+$background-1-color: #0728c5;
+$text-color: #ffffff;
+$text-light-color: #000000;
 
 
 /* Fonts */
@@ -31,6 +32,7 @@ $text-font: 'League Spartan', sans-serif;
 html {
     scroll-behavior: smooth;
     margin: 0 auto;
+    background-color: $background-1-color;
 }
 
 header {

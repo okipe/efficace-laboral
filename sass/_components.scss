@@ -12,10 +12,11 @@
 /* Buttons */
 
 .navbar__button--highlighted {
-    background-color: $primary-2-color;
+    background-color: $primary-1-color;
     border-radius: 3rem;
     padding: 1rem 3rem;
     text-decoration: none;
+    color: $text-light-color;
 }
 
 .section__button--highlighted {
@@ -25,10 +26,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: $primary-1-color;
+    background-color: $primary-2-color;
     font-family: $text-font;
     font-size: 20px;
-    color: $background-1-color;
     text-decoration: none;
 }
 
@@ -38,12 +38,14 @@
     font-family: $title-font;
     font-size: 56px;
     margin-bottom: 36px;
+    color: $text-color;
 }
 
 .section__paragraph--side {
     font-family: $text-font;
     font-size: 24px;
     margin-top: 16px;
+    color: $text-color;
 }
 
 /* Section styles */
@@ -80,6 +82,10 @@
 
             &:last-child {
                 @extend .navbar__button--highlighted;
+
+                a {
+                    color: $text-light-color;
+                }
             }
     
         }
@@ -100,6 +106,7 @@
             font-weight: 700;
             font-size: 56px;
             margin: 40px 0;
+            color: $text-color;
         }
 
         &--small {
@@ -107,6 +114,7 @@
             font-weight: normal;
             font-size: 32px;
             margin: 40px 0;
+            color: $text-color;
         }
     }
 
@@ -132,6 +140,7 @@
         font-size: 36px;
         text-align: center;
         margin-bottom: 64px;
+        color: $text-color;
     }
 
     &__container {
@@ -152,6 +161,7 @@
                 margin: 30px;
                 text-align: center;
                 align-items: center;
+                color: $text-color;
             }
         }
     }
@@ -238,6 +248,7 @@
     p {
         font-family: $text-font;
         font-size: 24px;
+        color: $text-color;
     }
 
     &__text__icons__item {
@@ -250,6 +261,10 @@
             font-size: 36px;
             margin: 0 20px 0 0;
         }
+    }
+
+    a {
+        color: $text-color;
     }
 }
 
@@ -269,8 +284,10 @@ footer {
             color: $text-light-color;
         }
 
-        img {
+        i {
             margin-right: 20px;
+            color: black;
+            font-size: 24px;
         }
     }
 } 
