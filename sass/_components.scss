@@ -97,7 +97,7 @@ header {
     padding: 20px 30px;
 
     .header__logo {
-        width: 40vh;
+        width: 220px;
 
         &:hover {
             transform: scale(1.1, 1.1);
@@ -501,6 +501,8 @@ footer {
         width: 100%;
     }
 
+    
+
     header .header__open-button--mobile {
         display: block; /*Button of open*/
         border: 0;
@@ -526,12 +528,15 @@ footer {
         background-color: $primary-2-color;
         padding: 2rem;
         box-shadow: 0 0 0 1000vmax rgba($color: #000000, $alpha: 0.4);
+        justify-content: flex-start;
 
         &__menu {
             flex-direction: column;
             align-items: end;
-            line-height: 3rem;
-        }
+            line-height: 5rem;
+            font-size: 28px;
+            width: 300px;
+            }
 
         &__close-button--mobile {
             display: block; /*Button of close*/
@@ -540,6 +545,17 @@ footer {
             background-color: transparent;
             color: $text-color;
             cursor: pointer;
+        }
+
+        &__menu {
+            li .navbar__menu__item--first {
+                display: inline;
+            }
+            
+            li:last-child {
+            border-radius: 2rem;
+            padding: 6px 20px;
+            }
         }
     }
 }

@@ -129,7 +129,7 @@ header {
   padding: 20px 30px;
 }
 header .header__logo {
-  width: 40vh;
+  width: 220px;
 }
 header .header__logo:hover {
   transform: scale(1.1, 1.1);
@@ -434,11 +434,14 @@ footer .footer__container i {
     background-color: #7ed956;
     padding: 2rem;
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.4);
+    justify-content: flex-start;
   }
   header .navbar__menu {
     flex-direction: column;
     align-items: end;
-    line-height: 3rem;
+    line-height: 5rem;
+    font-size: 28px;
+    width: 300px;
   }
   header .navbar__close-button--mobile {
     display: block; /*Button of close*/
@@ -447,6 +450,13 @@ footer .footer__container i {
     background-color: transparent;
     color: #000000;
     cursor: pointer;
+  }
+  header .navbar__menu li .navbar__menu__item--first {
+    display: inline;
+  }
+  header .navbar__menu li:last-child {
+    border-radius: 2rem;
+    padding: 6px 20px;
   }
 }
 @media all and (max-width: 768px) {
