@@ -4,15 +4,35 @@
 // - grid
 // - contenedores
 
-.navbar {
+// .navbar {
+//     display: flex;
+//     justify-content: space-between;
+
+//     &__menu {
+//         align-items: center;
+//         // background-color: aqua;
+//         display: flex;
+//     }
+// }
+
+@use 'base' as *;
+
+header {
     display: flex;
     justify-content: space-between;
 
-    &__menu {
-        align-items: center;
-        // background-color: aqua;
-        display: flex;
+    .navbar {
+        // display: flex;
+
+        &__menu {
+            align-items: center;
+            display: flex;
+            // display: grid;
+            // grid-template-columns: 1fr repeat(4, 2fr);
+            
+        }
     }
+
 }
 
 main {

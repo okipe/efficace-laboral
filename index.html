@@ -11,13 +11,16 @@
 <body>
     <!-- Header -->
     <header id="inicio">
-        <nav class="navbar">
-            <a href="#inicio"><img src="./assets/img/logo_desktop.png" alt="Logo Efficace laboral" class="navbar__logo"></a>
+        <a href="#inicio"><img src="./assets/img/logo_desktop.png" alt="Logo Efficace Laboral" class="header__logo"></a>
+        <button class="header__open-button--mobile" id="open"><i class="bi bi-list"></i></button><!--In allow to OPEN the mobile menu-->
+        <nav class="navbar" id="navbar">  <!-- The visible class make navbar visible-->
+            <button class="navbar__close-button--mobile" id="close"><i class="bi bi-x"></i></button><!--It allow to CLOSE the mobile menu-->
             <ul class="navbar__menu">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#somos">¿Quienes somos?</a></li>
-                <li><a href="#home">Contacto</a></li>
-                <li><a href="#home">Recursos gratis</a></li>
+                <li><a href="#inicio"  class="navbar__menu__item--first navbar__menu__item">Inicio</a></li><!--In desktop it has display none-->
+                <li><a href="#servicios" class="navbar__menu__item">Servicios</a></li>
+                <li><a href="#somos" class="navbar__menu__item">¿Quienes somos?</a></li>
+                <li><a href="#home" class="navbar__menu__item">Contacto</a></li>
+                <li><a href="#home" class="navbar__menu__item">Recursos gratis</a></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +76,7 @@
             <div class="team__text">
                 <h3>Soy Leslye Suárez</h3>
                 <p>Consultora de empleabilidad y especialista en gestión del talento humano. Con más de 3 años de experiencia  manejando procesos de desarrollo organizacional, reclutamiento y selección, técnicas de gamificación y evaluación por competencias para la búsqueda, atracción y retención de los mejores talentos.</p>
-                <p>"Apuesto por el potencial de los diferentes profesionales del país y trabajo en impulsar sus talentos para convertirlos en agentes de cambio"</p>.
+                <p>“Apuesto por el potencial de los diferentes profesionales del país y trabajo en impulsar sus talentos para convertirlos en agentes de cambio”.</p>.
             </div>
             
             
@@ -139,4 +142,7 @@
             <p>© 2023 Efficace. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="/js/main.js"></script>
 </body>
+</html>
