@@ -72,7 +72,7 @@ main {
 
     .we-are {
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 600px));
+        grid-template-columns: 1fr;
         gap: 50px;
 
         &__text {

@@ -12,21 +12,21 @@
 /* Buttons */
 
 .navbar__button--highlighted {
-    background-color: $primary-1-color;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
     text-decoration: none;
-    color: $text-light-color;
+    border: 1.5px solid $primary-3-color;
+
 }
 
 .section__button--highlighted {
     display: flex;
-    width: 300px;
+    width: 270px;
     height: 50px;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    background-color: $primary-2-color;
+    border: 1.5px solid $primary-3-color;
     font-family: $text-font;
     font-size: 20px;
     text-decoration: none;
@@ -141,7 +141,7 @@ header {
                 @extend .navbar__button--highlighted;
 
                 a {
-                    color: $text-light-color;
+                    color: $text-color;
                 }
             }
 
@@ -160,7 +160,7 @@ header {
 .hero {
     margin: 0 50px;
     // width: 1400px;
-    height: 500px;
+    height: 600px;
 
     &__text {
         align-self: center;
@@ -235,14 +235,20 @@ header {
 }
 
 .we-are {
-    margin: 40px 50px 0 50px;
+    margin: 40px 50px 40px 50px;
     &__text {
-        h3 {
-            @extend .section__title--side;        
+        h2 {
+            font-family: $title-font;
+            font-size: 56px;
+            text-align: center;
+            margin-bottom: 42px;
+            color: $text-color;;        
         }
 
         p {
             @extend .section__paragraph--side;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
     }
@@ -267,12 +273,29 @@ header {
     }
 
     &__img img {
-        width: 100%;
+        width: 70%;
+        margin: 0 60px;
     }
 }
 
+.quote {
+    margin: 60px 50px 0 50px;
+
+    p {
+        font-family: $text-font;
+        font-style: italic;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 30px;
+        text-align: center;
+        align-items: center;
+        color: $text-color;
+        line-height: 1.4;
+       }
+}
+
 .resources {
-    margin: 100px 50px 0 50px;
+    margin: 50px 50px 0 50px;
     
     h3 {
         @extend .section__title--side;
@@ -606,12 +629,23 @@ footer {
 
         &__img {
             order: 2;
+            display: flex;
+
+            img {
+                margin: 0 auto;
+            }
         }
 
         &__text {
-            h3, p {
+            h3 {
                 text-align: center;
             }
+
+            p {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
         }
     }
     
