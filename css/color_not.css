@@ -48,11 +48,17 @@
 /* LESLYE */
 
 /* Color Theme Swatches in Hex */
+.Composicion-Geometrica-1-hex { color: #abade7; }
 .Composicion-Geometrica-1-hex { color: #1B24F8; }
-.Composicion-Geometrica-2-hex { color: #1897D9; }
-.Composicion-Geometrica-3-hex { color: #26F0B5; }
-.Composicion-Geometrica-4-hex { color: #1DDB23; }
-.Composicion-Geometrica-5-hex { color: #C8F81B; }
+.Composicion-Geometrica-1-hex { color: #1c23da; }
+.Composicion-Geometrica-2-hex { color: #z; }
+.Composicion-Geometrica-3-hex { color: #0e6a9c; }
+.Composicion-Geometrica-4-hzex { color: #26F0B5; }
+.Composicion-Geometrica-5-hex { color: #1DDB23; }
+.Composicion-Geometrica-5-hex { color: #64d468; }
+.Composicion-Geometrica-6-hex { color: #C8F81B; } 
+.Composicion-Geometrica-7-hex { color: #138516; }
+.Composicion-Geometrica-8-hex { color: #22a026; }
 
 /* Color Theme Swatches in RGBA */
 .Composicion-Geometrica-1-rgba { color: rgba(27, 36, 248, 1); }

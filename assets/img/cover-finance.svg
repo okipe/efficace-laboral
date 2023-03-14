@@ -82,11 +82,11 @@
        spreadMethod="pad"
        id="linearGradient66">
       <stop
-         style="stop-opacity:1;stop-color:#ff928e"
+         style="stop-color:#00ca00;stop-opacity:1;"
          offset="0"
          id="stop62" />
       <stop
-         style="stop-opacity:1;stop-color:#fe7062"
+         style="stop-color:#138516;stop-opacity:1;"
          offset="1"
          id="stop64" />
     </linearGradient>
@@ -103,17 +103,17 @@
        x2="1"
        y2="0"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-19477.8,-29745.9,-29745.9,19477.8,27205.5,21354.6)"
+       gradientTransform="matrix(-19477.8,-29745.9,-29745.9,19477.8,27043.559,21147.195)"
        spreadMethod="pad"
        id="linearGradient82">
       <stop
-         style="stop-opacity:1;stop-color:#febbba"
-         offset="0"
-         id="stop78" />
-      <stop
-         style="stop-opacity:1;stop-color:#ff928e"
-         offset="1"
+         style="stop-color:#1ddb23;stop-opacity:1;"
+         offset="0.00051671"
          id="stop80" />
+      <stop
+         style="stop-color:#22a026;stop-opacity:1;"
+         offset="0.46687376"
+         id="stop78" />
     </linearGradient>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -132,11 +132,11 @@
        spreadMethod="pad"
        id="linearGradient98">
       <stop
-         style="stop-opacity:1;stop-color:#ff928e"
+         style="stop-color:#00ca00;stop-opacity:1;"
          offset="0"
          id="stop94" />
       <stop
-         style="stop-opacity:1;stop-color:#fe7062"
+         style="stop-color:#138516;stop-opacity:1;"
          offset="1"
          id="stop96" />
     </linearGradient>
@@ -186,7 +186,7 @@
          offset="0"
          id="stop126" />
       <stop
-         style="stop-opacity:1;stop-color:#1a0f91"
+         style="stop-color:#1a0f91;stop-opacity:1;"
          offset="1"
          id="stop128" />
     </linearGradient>
@@ -482,11 +482,11 @@
        spreadMethod="pad"
        id="linearGradient322">
       <stop
-         style="stop-opacity:1;stop-color:#ff928e"
+         style="stop-color:#138516;stop-opacity:1;"
          offset="0"
          id="stop318" />
       <stop
-         style="stop-opacity:1;stop-color:#fe7062"
+         style="stop-color:#22a026;stop-opacity:1;"
          offset="1"
          id="stop320" />
     </linearGradient>
@@ -532,7 +532,7 @@
        spreadMethod="pad"
        id="linearGradient354">
       <stop
-         style="stop-opacity:1;stop-color:#09005d"
+         style="stop-color:#1c23da;stop-opacity:1;"
          offset="0"
          id="stop350" />
       <stop
@@ -1501,15 +1501,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.12507785"
-     inkscape:cx="2978.1451"
-     inkscape:cy="2558.4065"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="0.13431716"
+     inkscape:cx="2319.1378"
+     inkscape:cy="2296.8026"
+     inkscape:window-width="1846"
+     inkscape:window-height="1016"
+     inkscape:window-x="1994"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g10">
+     inkscape:current-layer="g72">
     <inkscape:page
        x="0"
        y="0"
@@ -1580,7 +1580,7 @@
            id="g72"
            clip-path="url(#clipPath76)">
           <path
-             d="m 25995,6529.9 h -9725.4 v 10979 c 0,223.3 181,404.3 404.3,404.3 h 8916.9 c 223.2,0 404.2,-181 404.2,-404.3 v -10979"
+             d="m 25833.059,6322.4949 h -9725.4 V 17301.495 c 0,223.3 181,404.3 404.3,404.3 h 8916.9 c 223.2,0 404.2,-181 404.2,-404.3 V 6322.4949"
              style="fill:url(#linearGradient82);fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path84" />
         </g>
@@ -1647,25 +1647,29 @@
       </g>
       <g
          id="g166"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#1c23da;fill-opacity:1">
         <g
            id="g168"
-           clip-path="url(#clipPath172)">
+           clip-path="url(#clipPath172)"
+           style="fill:#1c23da;fill-opacity:1">
           <path
              d="m 31047.8,24743.8 c 0,0 630.3,-937.6 682,-1365.3 51.8,-427.7 -174.3,-575.6 -834,-630.1 -1963.5,-162.3 -2931.3,426.1 -2931.3,426.1 -134.3,856.4 -229.9,1074.2 -1351.6,1539.9 0,0 1418.8,-112.7 1704.3,-1.9 285.5,110.8 2730.6,31.3 2730.6,31.3"
-             style="fill:url(#linearGradient178);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#1c23da;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path180" />
         </g>
       </g>
       <g
          id="g182"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#000000">
         <g
            id="g184"
-           clip-path="url(#clipPath188)">
+           clip-path="url(#clipPath188)"
+           style="fill:#000000">
           <path
              d="m 28534.1,29996.8 c 0,0 439,519.5 905.8,-117.9 84.5,-115.4 409.2,-20.2 528.2,-261.8 61.5,-124.7 194.2,-195.6 331,-170.4 340.6,62.8 897.3,68.1 1172.2,-465.6 209.8,-407.4 47.8,-645.9 -161.9,-781.8 -154,-99.8 -209,-302.5 -115.9,-460.7 89.4,-151.7 106.2,-357.2 -124.5,-604.4 -517,-554.1 -1540.4,351.6 -1540.4,351.6 l -812.5,1920.1 -182,590.9"
-             style="fill:url(#linearGradient194);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path196" />
         </g>
       </g>
@@ -1719,13 +1723,15 @@
       </g>
       <g
          id="g262"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#000000">
         <g
            id="g264"
-           clip-path="url(#clipPath268)">
+           clip-path="url(#clipPath268)"
+           style="fill:#000000">
           <path
              d="m 28536.8,29256.7 c 0,0 -442.4,581 -781.9,74.6 l 5.7,-175 c 0,0 -441.6,20.6 -393.7,427.7 47.9,407 408.4,685 908.2,546 499.8,-139.1 791.8,-297.5 848.3,-644.5 56.4,-347 -226.9,-290.3 -226.9,-290.3 0,0 -108.3,239.5 -239,255.8 -130.6,16.4 -83.4,-173 -83.4,-173 l -37.3,-21.3"
-             style="fill:url(#linearGradient274);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path276" />
         </g>
       </g>
@@ -1746,10 +1752,11 @@
          transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
         <g
            id="g296"
-           clip-path="url(#clipPath300)">
+           clip-path="url(#clipPath300)"
+           style="fill:#22a026;fill-opacity:1">
           <path
              d="m 29770.1,24354.6 c -1.9,-0.1 -3.8,-0.2 -5.8,-0.2 l -2537,2.8 c -62.7,0.1 -113.5,51 -113.5,113.7 0.1,62.7 51.2,114.6 113.7,113.4 l 2537.1,-2.7 c 62.7,-0.1 113.5,-51 113.4,-113.7 -0.1,-60.8 -47.9,-110.4 -107.9,-113.3"
-             style="fill:url(#linearGradient306);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#22a026;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path308" />
         </g>
       </g>
@@ -1767,13 +1774,15 @@
       </g>
       <g
          id="g326"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#1ddb23;fill-opacity:1">
         <g
            id="g328"
-           clip-path="url(#clipPath332)">
+           clip-path="url(#clipPath332)"
+           style="fill:#1ddb23;fill-opacity:1">
           <path
              d="m 26435.1,25596.1 c 45.8,-142.3 12,-280.4 -75.5,-308.6 -87.5,-28.2 -195.6,64.3 -241.4,206.6 -45.7,142.2 -11.9,280.4 75.6,308.5 87.5,28.2 195.6,-64.3 241.3,-206.5"
-             style="fill:url(#linearGradient338);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#1ddb23;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path340" />
         </g>
       </g>
@@ -1899,13 +1908,15 @@
       </g>
       <g
          id="g492"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#000000">
         <g
            id="g494"
-           clip-path="url(#clipPath498)">
+           clip-path="url(#clipPath498)"
+           style="fill:#000000">
           <path
              d="m 28462.1,14352.2 c -22.8,-7.4 -46.7,7.3 -50.3,31 -10.8,72.1 -37.8,214.7 -92.6,311.9 0,0 28.7,102.4 -258.9,-52.3 -287.5,-154.8 -719.4,-382.2 -973.7,-246.8 -247.9,132 -499,796.3 156.2,673.2 24.9,-4.7 47.8,15.2 46,40.5 -8.1,109.2 2.8,360.3 257.1,441 238,75.4 110.2,-46.9 163.9,-111.7 15.8,-19.1 -19.9,64.9 318.3,15.8 116,-16.9 264.9,291.2 550,165.6 234.8,-103.5 271.3,-248.1 267.4,-338.3 -1.2,-29.2 28.4,-48.9 54.9,-36.7 71.9,33.1 187.6,50.3 298.4,-88.5 153.2,-191.9 -65.7,-358.4 -131.4,-402 -10.7,-7.1 -17.4,-19 -17.5,-31.9 -0.6,-99.8 -16.2,-535.2 -234.4,-780.7 -18.9,-21.3 -53.8,-15.1 -64.8,11.2 l -168,400.2 c -7.8,18.6 -28.5,28.2 -47.7,22 l -72.9,-23.5"
-             style="fill:url(#linearGradient504);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path506" />
         </g>
       </g>
@@ -2007,13 +2018,15 @@
          id="path624" />
       <g
          id="g626"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#1c23da;fill-opacity:1">
         <g
            id="g628"
-           clip-path="url(#clipPath632)">
+           clip-path="url(#clipPath632)"
+           style="fill:#1c23da;fill-opacity:1">
           <path
              d="m 14976.1,10168.9 c -4,0 -8.1,0.1 -12.3,0.2 l -439.4,10.7 -565.9,13.8 -2832.4,69.1 -560.7,13.6 -4251.9,103.8 -571.47,13.9 -1072.29,26.2 c -300.1,7.3 -524.99,277.4 -477.79,573.8 l 490.6,3081.7 1480.08,9297.2 c 38.41,241.2 246.55,418 489.73,418 3.87,0 7.75,0 11.64,-0.1 l 8239.3,-190.8 1069.7,-24.7 c 284.9,-6.6 505.6,-251.2 483.1,-535.2 l -187.7,-2364.3 -483.5,-6089.5 -314.5,-3960.6 c -20.5,-258.5 -236.4,-456.8 -494.3,-456.8 M 6950.29,23433.5 c -243.2,0 -451.34,-176.7 -489.74,-418 L 4601,11334.6 c -47.2,-296.4 177.68,-566.5 477.79,-573.9 l 9561.91,-233.2 c 4.1,-0.1 8.3,-0.1 12.3,-0.1 258,-0.1 473.8,198.3 494.3,456.8 l 930.1,11714.2 c 22.6,284 -198.2,528.6 -483,535.1 l -8632.48,199.9 c -3.88,0.1 -7.77,0.1 -11.63,0.1"
-             style="fill:url(#linearGradient638);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#1c23da;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path640" />
         </g>
       </g>
@@ -2103,13 +2116,15 @@
       </g>
       <g
          id="g714"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#138516;fill-opacity:1">
         <g
            id="g716"
-           clip-path="url(#clipPath720)">
+           clip-path="url(#clipPath720)"
+           style="fill:#138516;fill-opacity:1">
           <path
              d="m 10795.6,20643.1 1505,546.3 116,-242.9 -1446.7,-545.2 c 0,0 -201.1,17.9 -174.3,241.8"
-             style="fill:url(#linearGradient726);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#138516;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path728" />
         </g>
       </g>
@@ -2271,13 +2286,15 @@
       </g>
       <g
          id="g938"
-         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)">
+         transform="matrix(0.12389866,0,0,0.12389858,-443.31922,-500.33297)"
+         style="fill:#000000;fill-opacity:1">
         <g
            id="g940"
-           clip-path="url(#clipPath944)">
+           clip-path="url(#clipPath944)"
+           style="fill:#000000;fill-opacity:1">
           <path
              d="m 7780.85,18836.1 c -10.68,-27.6 -8.05,-58.4 7.17,-83.8 l 298.42,-497.4 c 4.52,-7.6 9.92,-14.4 16.36,-20.4 35.52,-33 157.06,-129.2 251.02,1.7 80.09,111.6 155.23,213.1 235.74,254.9 47.02,24.5 104.87,4.9 128.74,-42.4 49.17,-97.4 144.41,-296.1 204.23,-484.4 14.99,-47.2 -9.37,-97.9 -55.28,-116.5 -121.16,-49.1 -360.6,-137.9 -573.08,-167.2 -34.9,-4.8 -69.46,9.9 -90.23,38.4 -91.41,125.2 -349.07,475.2 -437.01,562.8 -81.7,81.4 -232.48,50.7 -300.42,31.2 -25.79,-7.4 -53.25,-3.9 -76.24,10 -68.93,41.5 -189.23,144.9 -79.18,319.9 27.36,43.6 13.41,101.5 -29.54,129.8 -76.96,50.6 -160.48,145.7 -80.91,299.5 80.55,155.8 224.38,169.8 322.35,157.8 43.35,-5.3 87.35,17.5 103.98,57.9 7.4,17.9 22.02,33.2 49.25,38.7 51.34,10.5 85.04,57.4 74.97,108.8 -17.28,88.2 -4.27,202.7 136.49,280.1 258.15,141.9 484.29,-89.3 541.79,-284.6 57.49,-195.2 -231.14,-333.2 -412.71,-356.2 -133.37,-16.9 -206.49,-162.5 -235.91,-238.6"
-             style="fill:url(#linearGradient950);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path952" />
         </g>
       </g>
