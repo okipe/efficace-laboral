@@ -212,6 +212,9 @@ header .navbar__menu li .navbar__menu__item--first {
   margin-bottom: 64px;
   color: #000000;
 }
+.services__container a {
+  text-decoration: none;
+}
 .services__container__item {
   flex-direction: column;
   justify-self: center;
@@ -228,6 +231,7 @@ header .navbar__menu li .navbar__menu__item--first {
   text-align: center;
   align-items: center;
   color: #000000;
+  text-decoration: none;
 }
 
 .we-are {

@@ -167,7 +167,11 @@ header {
     }
 
     &__container {
-    
+        
+        a {
+            text-decoration: none;
+        }
+
         &__item {
         flex-direction: column;
         justify-self: center;
@@ -185,6 +189,7 @@ header {
                 text-align: center;
                 align-items: center;
                 color: $text-color;
+                text-decoration: none;
             }
         }
     }
