@@ -106,6 +106,22 @@ main {
             align-self: center;
         }
     }
+
+    .books {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__ranking .books__ranking__book-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px; 
+
+            .books__ranking__item {
+                display: grid;
+                grid-template-columns: minmax(30%, 300px) 1fr;
+            }
+        }
+    }
 }
 
 footer .footer__container {
