@@ -386,7 +386,13 @@ blockquote {
             img {
                 max-width: 250px;
             }
+
+            .book__button {
+                @extend .section__button--highlighted;
+                margin-top: 20px;
+            }
         }
+
 
     }
 

@@ -88,7 +88,7 @@ main .books {
 main .books__ranking .books__ranking__book-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
 }
 main .books__ranking .books__ranking__book-container .books__ranking__item {
   display: grid;
@@ -108,7 +108,7 @@ footer .footer__container {
   border: 1.5px solid #000000;
 }
 
-.section__button--highlighted, .hero__button {
+.section__button--highlighted, .books__ranking__item .book__button, .hero__button {
   display: flex;
   width: 270px;
   height: 50px;
@@ -376,6 +376,9 @@ blockquote p::after {
 
 .books__ranking__item img {
   max-width: 250px;
+}
+.books__ranking__item .book__button {
+  margin-top: 20px;
 }
 
 footer {
