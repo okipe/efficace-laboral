@@ -108,8 +108,8 @@ main {
     }
 
     .books {
-        display: grid;
-        grid-template-columns: 1fr;
+        // display: grid;
+        // grid-template-columns: 1fr;
 
         &__ranking .books__ranking__book-container {
             display: grid;
@@ -119,6 +119,7 @@ main {
             .books__ranking__item {
                 display: grid;
                 grid-template-columns: minmax(30%, 300px) 1fr;
+                // gap: 50px; // It increases the total height 
             }
         }
     }

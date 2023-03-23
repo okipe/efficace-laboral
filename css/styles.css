@@ -81,10 +81,6 @@ main .contact {
 main .contact__title {
   align-self: center;
 }
-main .books {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 main .books__ranking .books__ranking__book-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,6 +114,20 @@ footer .footer__container {
   border: 1.5px solid #000000;
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.section__button--megahighlighted, .books .library__button {
+  display: flex;
+  width: 400px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1.5px solid #000000;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
   text-decoration: none;
   color: #000000;
 }
@@ -374,11 +384,26 @@ blockquote p::after {
   color: #000000;
 }
 
+.books {
+  margin: 0 50px;
+}
+.books h1 {
+  margin-top: 50px;
+}
+.books__ranking h2 {
+  margin-top: 100px;
+}
 .books__ranking__item img {
   max-width: 250px;
+  padding-right: 30px;
 }
 .books__ranking__item .book__button {
   margin-top: 20px;
+}
+.books .library__button {
+  font-weight: bold;
+  margin-top: 100px;
+  margin: auto;
 }
 
 footer {
@@ -415,6 +440,9 @@ footer .footer__container i {
   .contact {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .books__ranking .books__ranking__book-container .books__ranking__item {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (max-width: 1200px) {
@@ -487,6 +515,13 @@ footer .footer__container i {
   }
   .contact a {
     color: #000000;
+  }
+  main .books__ranking__item img {
+    padding-right: 0;
+  }
+  main .books__ranking .books__ranking__book-container {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
   }
   footer .footer__container p {
     font-size: 20px;
@@ -608,6 +643,17 @@ footer .footer__container i {
   main .contact .contact__text__icons__item p {
     text-align: left;
   }
+  main .books__ranking .books__ranking__book-container .books__ranking__item {
+    grid-template-columns: 1fr 2fr;
+  }
+  main .books__ranking .books__ranking__book-container .books__ranking__item a {
+    justify-self: center;
+  }
+  main .books__ranking .books__ranking__book-container .books__ranking__item img {
+    max-width: 200px;
+    padding-right: 30px;
+    justify-self: center;
+  }
   footer .footer__container {
     flex-direction: column;
     align-items: center;
@@ -622,6 +668,17 @@ footer .footer__container i {
 @media all and (max-width: 768px) {
   main .hero {
     margin-bottom: 60px;
+  }
+  main .books h1 {
+    font-size: 47px;
+  }
+  main .books__ranking .books__ranking__book-container .books__ranking__item {
+    grid-template-columns: 1fr;
+  }
+  main .books .library__button {
+    font-size: 22px;
+    width: 230px;
+    text-align: center;
   }
 }
 

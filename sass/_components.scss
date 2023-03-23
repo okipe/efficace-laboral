@@ -33,6 +33,20 @@
     color: $text-color;
 }
 
+.section__button--megahighlighted {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1.5px solid $primary-3-color;
+    font-family: $text-font;
+    font-size: 32px;
+    text-decoration: none;
+    color: $text-color;
+}
+
 /* Common titles */
 
 .section__title--side {
@@ -365,8 +379,11 @@ blockquote {
 }
 
 .books {
+    margin: 0 50px;
+
     h1 {
         @extend .section__title--center;
+        margin-top: 50px;
     }
 
     p {
@@ -375,7 +392,8 @@ blockquote {
 
     &__ranking {
         h2 {
-            @extend .section__title--center; 
+            @extend .section__title--center;
+            margin-top: 100px; 
         }
 
         &__item {
@@ -385,6 +403,7 @@ blockquote {
 
             img {
                 max-width: 250px;
+                padding-right: 30px;
             }
 
             .book__button {
@@ -392,8 +411,13 @@ blockquote {
                 margin-top: 20px;
             }
         }
+    }
 
-
+    .library__button {
+        @extend .section__button--megahighlighted;
+        font-weight: bold;
+        margin-top: 100px;
+        margin: auto;
     }
 
 }
@@ -439,6 +463,17 @@ footer {
     .contact {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .books {
+        &__ranking .books__ranking__book-container .books__ranking__item  {
+            grid-template-columns: 1fr 1fr;
+            
+            // img {
+            //     max-width: 220px;
+            // }
+        }
+        
     }
 }
 
@@ -540,6 +575,19 @@ footer {
     
         a {
             color: $text-color;
+        }
+    }
+
+    main .books {
+        &__ranking {
+            &__item img {
+                padding-right: 0;
+            }
+
+            .books__ranking__book-container {
+                grid-template-columns: 1fr;
+                row-gap: 50px;
+            }
         }
     }
 
@@ -706,6 +754,24 @@ footer {
         }
     }
 
+    main .books {
+
+        &__ranking .books__ranking__book-container .books__ranking__item {
+            grid-template-columns: 1fr 2fr;
+
+            a {
+                justify-self: center;
+            }
+            
+            img {
+                max-width: 200px;
+                padding-right: 30px;
+                justify-self: center;
+            }
+        }
+
+    }
+
     footer .footer__container{
         flex-direction: column;
         align-items: center;
@@ -723,6 +789,25 @@ footer {
 @media all and (max-width: $breakpoint-md) {
     main .hero {
         margin-bottom: 60px;
+    }
+
+    main .books {
+        h1 {
+            font-size: 47px;
+        }
+
+        &__ranking .books__ranking__book-container {
+
+            .books__ranking__item {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .library__button {
+            font-size: 22px;
+            width: 230px;
+            text-align: center;
+        }
     }
 
 }
