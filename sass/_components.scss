@@ -292,7 +292,7 @@ blockquote {
     font-size: 7rem;
     margin: -2.5rem 0 0 -4rem;
     position: absolute;
-    opacity: 0.5;
+    color: gray;
  }
  
  blockquote p::after {
@@ -425,9 +425,10 @@ blockquote {
 
     &__ranking__container {
         margin: 50px 0 125px 0;
+        min-width: 150px;
 
         img {
-            max-width: 300px;
+            width: 100%;
         }
     }
 
@@ -489,13 +490,13 @@ footer {
         
     }
 
-    .cv-templates {
-        &__ranking__container {
-            img {
-                max-width: 250px;
-            }
-        }
-    }
+    // .cv-templates {
+    //     &__ranking__container {
+    //         img {
+    //             max-width: 250px;
+    //         }
+    //     }
+    // }
 }
 
 @media all and (max-width: $breakpoint-xl) {
@@ -686,6 +687,15 @@ footer {
             }
         }
     }
+
+    main .cv-templates {
+        &__ranking .cv-templates__ranking__container {
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 5%;
+        }
+    }
 }
 
 @media all and (max-width: $breakpoint-md) {
@@ -846,6 +856,23 @@ footer {
             width: 230px;
             text-align: center;
         }
+    }
+
+    main .cv-templates {
+        &__ranking .cv-templates__ranking__container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        &__button {
+           font-size: 22px;
+           width: 230px;
+           text-align: center;
+        }
+
+        // &__button {
+        //     width: 450px;
+        // }
     }
 
 }

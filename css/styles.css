@@ -93,7 +93,7 @@ main .books__ranking .books__ranking__book-container .books__ranking__item {
 main .cv-templates__ranking .cv-templates__ranking__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 3%;
 }
 
 footer .footer__container {
@@ -324,7 +324,7 @@ blockquote p::after {
   font-size: 7rem;
   margin: -2.5rem 0 0 -4rem;
   position: absolute;
-  opacity: 0.5;
+  color: gray;
 }
 
 blockquote p::after {
@@ -405,9 +405,10 @@ blockquote p::after {
 }
 .cv-templates__ranking__container {
   margin: 50px 0 125px 0;
+  min-width: 150px;
 }
 .cv-templates__ranking__container img {
-  max-width: 300px;
+  width: 100%;
 }
 .cv-templates__button {
   margin-top: 20px;
@@ -451,9 +452,6 @@ footer .footer__container i {
   }
   .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 1fr;
-  }
-  .cv-templates__ranking__container img {
-    max-width: 250px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -591,6 +589,12 @@ footer .footer__container i {
     border-radius: 2rem;
     padding: 6px 20px;
   }
+  main .cv-templates__ranking .cv-templates__ranking__container {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+  }
 }
 @media all and (max-width: 768px) {
   main .hero {
@@ -700,6 +704,15 @@ footer .footer__container i {
     grid-template-columns: 1fr;
   }
   main .books .library__button {
+    font-size: 22px;
+    width: 230px;
+    text-align: center;
+  }
+  main .cv-templates__ranking .cv-templates__ranking__container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  main .cv-templates__button {
     font-size: 22px;
     width: 230px;
     text-align: center;
