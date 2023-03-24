@@ -90,6 +90,11 @@ main .books__ranking .books__ranking__book-container .books__ranking__item {
   display: grid;
   grid-template-columns: minmax(30%, 300px) 1fr;
 }
+main .cv-templates__ranking .cv-templates__ranking__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
 
 footer .footer__container {
   display: flex;
@@ -118,7 +123,7 @@ footer .footer__container {
   color: #000000;
 }
 
-.section__button--megahighlighted, .books .library__button {
+.section__button--megahighlighted, .cv-templates__button, .books .library__button {
   display: flex;
   width: 400px;
   height: 80px;
@@ -128,6 +133,7 @@ footer .footer__container {
   border: 1.5px solid #000000;
   font-family: "League Spartan", sans-serif;
   font-size: 32px;
+  font-weight: bold;
   text-decoration: none;
   color: #000000;
 }
@@ -140,7 +146,7 @@ footer .footer__container {
   color: #000000;
 }
 
-.section__title--center, .books__ranking h2, .books h1, .resources h3, .we-are__text h3, .services__title--big h3 {
+.section__title--center, .cv-templates h1, .cv-templates h2, .books h1, .books h2, .resources h3, .we-are__text h3, .services__title--big h3 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 56px;
   margin-bottom: 42px;
@@ -148,7 +154,7 @@ footer .footer__container {
   text-align: center;
 }
 
-.section__paragraph--side, .books p, .team__text p, .we-are__text p {
+.section__paragraph--side, .cv-templates p, .books p, .team__text p, .we-are__text p {
   font-family: "League Spartan", sans-serif;
   font-size: 24px;
   margin-top: 16px;
@@ -282,6 +288,10 @@ header .navbar__menu li .navbar__menu__item--first {
 .team {
   margin: 0 50px;
 }
+.team__text .hero__button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 .team__img img {
   width: 70%;
   margin: 0 60px;
@@ -372,11 +382,8 @@ blockquote p::after {
 .books {
   margin: 0 50px;
 }
-.books h1 {
+.books h1, .books h2 {
   margin-top: 50px;
-}
-.books__ranking h2 {
-  margin-top: 100px;
 }
 .books__ranking__item img {
   max-width: 250px;
@@ -386,9 +393,25 @@ blockquote p::after {
   margin-top: 20px;
 }
 .books .library__button {
-  font-weight: bold;
   margin-top: 100px;
   margin: auto;
+}
+
+.cv-templates {
+  margin: 0 50px;
+}
+.cv-templates h1, .cv-templates h2 {
+  margin-top: 50px;
+}
+.cv-templates__ranking__container {
+  margin: 50px 0 125px 0;
+}
+.cv-templates__ranking__container img {
+  max-width: 300px;
+}
+.cv-templates__button {
+  margin-top: 20px;
+  margin: 60px auto;
 }
 
 footer {
@@ -417,19 +440,20 @@ footer .footer__container i {
   header nav .navbar__menu {
     padding-left: 50px;
   }
-
   .hero,
-.services,
-.we-are,
-.team,
-.resources,
-.contact {
+  .services,
+  .we-are,
+  .team,
+  .resources,
+  .contact {
     margin-left: 50px;
     margin-right: 50px;
   }
-
   .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 1fr;
+  }
+  .cv-templates__ranking__container img {
+    max-width: 250px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -437,7 +461,6 @@ footer .footer__container i {
     justify-content: space-between;
     width: 630px;
   }
-
   main .hero {
     height: 500px;
     margin: 0 40px;
@@ -461,7 +484,6 @@ footer .footer__container i {
     color: #000000;
     line-height: 1.3;
   }
-
   main .services {
     margin: 30px 50px;
   }
@@ -475,20 +497,17 @@ footer .footer__container i {
     font-size: 24px;
     line-height: 1.3;
   }
-
   .section__title--side, .team__text h3, .contact__title h3 {
     font-size: 48px;
     margin-bottom: 24px;
   }
-
-  .section__paragraph--side, .we-are__text p, .team__text p, .books p {
+  .section__paragraph--side, .we-are__text p, .team__text p, .books p, .cv-templates p {
     font-family: "League Spartan", sans-serif;
     font-size: 20px;
     margin-top: 16px;
     color: #000000;
     line-height: 1.3;
   }
-
   .contact p {
     font-family: "League Spartan", sans-serif;
     font-size: 20px;
@@ -508,7 +527,6 @@ footer .footer__container i {
   .contact a {
     color: #000000;
   }
-
   main .books__ranking__item img {
     padding-right: 0;
   }
@@ -516,7 +534,6 @@ footer .footer__container i {
     grid-template-columns: 1fr;
     row-gap: 50px;
   }
-
   footer .footer__container p {
     font-size: 20px;
   }
@@ -528,17 +545,14 @@ footer .footer__container i {
   header {
     width: 100%;
   }
-
   header .header__open-button--mobile {
-    display: block;
-    /*Button of open*/
+    display: block; /*Button of open*/
     border: 0;
     font-size: 40px;
     background-color: transparent;
     color: #000000;
     cursor: pointer;
   }
-
   header .navbar {
     opacity: 0;
     visibility: hidden;
@@ -546,8 +560,7 @@ footer .footer__container i {
     flex-direction: column;
     align-items: end;
     gap: 1rem;
-    position: fixed;
-    /* The mobile menu will be fixed in the screen*/
+    position: fixed; /* The mobile menu will be fixed in the screen*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -564,8 +577,7 @@ footer .footer__container i {
     width: 300px;
   }
   header .navbar__close-button--mobile {
-    display: block;
-    /*Button of close*/
+    display: block; /*Button of close*/
     border: 0;
     font-size: 40px;
     background-color: transparent;
@@ -594,11 +606,9 @@ footer .footer__container i {
     display: inline-flex;
     justify-self: center;
   }
-
   main .services .services__container {
     grid-template-columns: 1fr;
   }
-
   main .we-are {
     grid-template-columns: 1fr;
     gap: 0;
@@ -611,7 +621,6 @@ footer .footer__container i {
     justify-self: center;
     margin-bottom: 50px;
   }
-
   main .team {
     grid-template-columns: 1fr;
     gap: 0;
@@ -630,12 +639,14 @@ footer .footer__container i {
     text-align: center;
     margin-bottom: 40px;
   }
-
+  main .team__text .hero__button {
+    display: flex;
+    margin: 20px auto 60px auto;
+  }
   main .resources__grid {
     grid-template-columns: 1fr;
     margin: 0 auto;
   }
-
   main .contact {
     margin-top: 40px;
     grid-template-columns: 1fr;
@@ -647,7 +658,6 @@ footer .footer__container i {
   main .contact .contact__text__icons__item p {
     text-align: left;
   }
-
   main .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 2fr;
   }
@@ -668,7 +678,6 @@ footer .footer__container i {
   main .books .library__button {
     width: 450px;
   }
-
   footer .footer__container {
     flex-direction: column;
     align-items: center;
@@ -684,7 +693,6 @@ footer .footer__container i {
   main .hero {
     margin-bottom: 60px;
   }
-
   main .books h1 {
     font-size: 47px;
   }

@@ -43,6 +43,7 @@
     border: 1.5px solid $primary-3-color;
     font-family: $text-font;
     font-size: 32px;
+    font-weight: bold;
     text-decoration: none;
     color: $text-color;
 }
@@ -253,6 +254,11 @@ header {
         p {
             @extend .section__paragraph--side;
         }
+
+        .hero__button {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
     }
 
     &__img img {
@@ -365,7 +371,7 @@ blockquote {
 .books {
     margin: 0 50px;
 
-    h1 {
+    h1, h2 {
         @extend .section__title--center;
         margin-top: 50px;
     }
@@ -375,10 +381,10 @@ blockquote {
     }
 
     &__ranking {
-        h2 {
-            @extend .section__title--center;
-            margin-top: 100px; 
-        }
+        // h2 {
+        //     @extend .section__title--center;
+        //     margin-top: 100px; 
+        // }
 
         &__item {
             h3 {
@@ -399,9 +405,36 @@ blockquote {
 
     .library__button {
         @extend .section__button--megahighlighted;
-        font-weight: bold;
         margin-top: 100px;
         margin: auto;
+    }
+
+}
+
+.cv-templates {
+    margin: 0 50px;
+
+    h1, h2 {
+        @extend .section__title--center;
+        margin-top: 50px;
+    }
+
+    p {
+        @extend .section__paragraph--side;
+    }
+
+    &__ranking__container {
+        margin: 50px 0 125px 0;
+
+        img {
+            max-width: 300px;
+        }
+    }
+
+    &__button {
+        @extend .section__button--megahighlighted;
+        margin-top: 20px;
+        margin: 60px auto;
     }
 
 }
@@ -452,12 +485,16 @@ footer {
     .books {
         &__ranking .books__ranking__book-container .books__ranking__item  {
             grid-template-columns: 1fr 1fr;
-            
-            // img {
-            //     max-width: 220px;
-            // }
         }
         
+    }
+
+    .cv-templates {
+        &__ranking__container {
+            img {
+                max-width: 250px;
+            }
+        }
     }
 }
 
@@ -711,6 +748,11 @@ footer {
             p {
                 text-align: center;
                 margin-bottom: 40px;
+            }
+
+            .hero__button {
+                display: flex;
+                margin: 20px auto 60px auto;
             }
 
         }
