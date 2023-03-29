@@ -131,6 +131,22 @@ main {
             gap: 3%;
         }
     }
+
+    .podcasts {
+        &__topic .podcasts__topic__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+    }
+
+    .trends {
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+    }
 }
 
 footer .footer__container {

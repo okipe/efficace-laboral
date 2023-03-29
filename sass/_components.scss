@@ -440,6 +440,52 @@ blockquote {
 
 }
 
+.podcasts {
+    margin: 0 50px;
+
+    h1 {
+        @extend .section__title--center;
+    }
+
+    h2 {
+        @extend .section__title--center;
+        margin-top: 60px;
+    }
+
+    p {
+        @extend .section__paragraph--side;
+    }
+
+    &__topic__container {
+        h3 {
+            @extend .section__title-2nd--small;
+        }
+    }
+}
+
+.trends {
+    margin: 0 50px;
+
+    h1 {
+        @extend .section__title--center;
+    }
+
+    h2 {
+        @extend .section__title--center;
+        margin-top: 60px;
+    }
+
+    p {
+        @extend .section__paragraph--side;
+    }
+
+    &__container {
+         @extend .section__title-2nd--small;
+         margin-top: 40px;
+         margin-bottom: 60px;
+    }
+}
+
 footer {
     background-color: $primary-1-color;
     margin-top: 100px;
@@ -696,6 +742,16 @@ footer {
             gap: 5%;
         }
     }
+
+    main .podcasts {
+        .podcasts__topic__container {
+            grid-template-columns: 1fr;
+        }
+
+        &__item  h3{
+            font-size: 20px;
+        }
+    }
 }
 
 @media all and (max-width: $breakpoint-md) {
@@ -791,7 +847,6 @@ footer {
     }
 
     main .books {
-
         &__ranking .books__ranking__book-container .books__ranking__item {
             grid-template-columns: 1fr 2fr;
 
@@ -817,7 +872,16 @@ footer {
         .library__button {
             width: 450px;
         }
+    }
 
+    main .podcasts {
+        h1, h2 {
+            font-size: 47px;
+        }
+
+        &__topic__container  h3{
+            font-size: 28px;
+        }
     }
 
     footer .footer__container{
