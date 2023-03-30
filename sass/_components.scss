@@ -486,6 +486,11 @@ blockquote {
     }
 }
 
+.yt-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
 footer {
     background-color: $primary-1-color;
     margin-top: 100px;
@@ -746,10 +751,16 @@ footer {
     main .podcasts {
         .podcasts__topic__container {
             grid-template-columns: 1fr;
-        }
 
-        &__item  h3{
-            font-size: 20px;
+            &__item  h3{
+                font-size: 32px;
+            }
+        }
+    }
+
+    main .trends {
+        &__container__item h3 {
+            font-size: 32px;
         }
     }
 }
@@ -882,6 +893,20 @@ footer {
         &__topic__container  h3{
             font-size: 28px;
         }
+    }
+
+    main .trends {
+        h1, h2 {
+            font-size: 47px;
+        }
+
+        &__container {
+            grid-template-columns: 1fr;
+            
+            h3 {
+                font-size: 28px;
+            }
+       }
     }
 
     footer .footer__container{
