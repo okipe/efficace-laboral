@@ -62,7 +62,8 @@ main .we-are__text {
 }
 main .team {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 600px));
+  grid-template-columns: minmax(200px, 520px) minmax(150px, 450px);
+  justify-content: space-between;
   gap: 50px;
 }
 main .team__text {
@@ -303,8 +304,7 @@ header .navbar__menu li .navbar__menu__item--first {
   margin-bottom: 30px;
 }
 .team__img img {
-  width: 70%;
-  margin: 0 60px;
+  width: 100%;
 }
 
 blockquote {
