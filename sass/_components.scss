@@ -21,7 +21,7 @@
 
 .section__button--highlighted {
     display: flex;
-    width: 270px;
+    // width: 270px;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -52,17 +52,19 @@
 
 .section__title--side {
     font-family: $title-font;
-    font-size: 56px;
+    font-size: 48px;
     margin-bottom: 36px;
     color: $text-color;
+    text-transform: uppercase;
 }
 
 .section__title--center {
     font-family: $title-font;
-    font-size: 56px;
+    font-size: 48px;
     margin-bottom: 42px;
     color: $text-color;
     text-align: center; 
+    text-transform: uppercase;
 }
 
 .section__paragraph--side {
@@ -155,9 +157,10 @@ header {
         &--big {
             font-family: $title-font;
             font-weight: 700;
-            font-size: 56px;
+            font-size: 48px;
             margin: 40px 0;
             color: $text-color;
+            text-transform: uppercase;
         }
 
         &--small {
@@ -181,6 +184,7 @@ header {
 
     &__button {
         @extend .section__button--highlighted;
+        width: 270px;
     }
 }
 
@@ -256,6 +260,8 @@ header {
         }
 
         .hero__button {
+            @extend .section__button--highlighted;
+            width: 210px;
             margin-top: 20px;
             margin-bottom: 30px;
         }
@@ -616,8 +622,12 @@ footer {
     }
 
     .section__title--side {
-        font-size: 48px;
+        font-size: 40px;
         margin-bottom: 24px;
+    }
+
+    .section__title--center {
+        font-size: 40px;
     }
 
     .section__paragraph--side {
@@ -794,6 +804,10 @@ footer {
     
     main .services .services__container {
         grid-template-columns: 1fr;
+
+        &__item img {
+            width: 40%;
+        }
     }
 
     main .we-are {
@@ -820,6 +834,8 @@ footer {
         &__img {
             order: 2;
             display: flex;
+            padding-left: 15%;
+            padding-right: 15%;
 
             img {
                 margin: 0 auto;
@@ -877,6 +893,10 @@ footer {
             a {
                 justify-self: center;
             }
+
+            p {
+                text-align: start;
+            }
             
             img {
                 max-width: 200px;
@@ -892,11 +912,23 @@ footer {
         .library__button {
             width: 450px;
         }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    main .cv-templates p {
+        text-align: center;
     }
 
     main .podcasts {
         h1, h2 {
             font-size: 47px;
+        }
+
+        p {
+            text-align: center;
         }
 
         &__topic__container  h3{

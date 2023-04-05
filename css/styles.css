@@ -62,7 +62,7 @@ main .we-are__text {
 }
 main .team {
   display: grid;
-  grid-template-columns: minmax(200px, 520px) minmax(150px, 450px);
+  grid-template-columns: minmax(200px, 500px) minmax(350px, 540px);
   justify-content: space-between;
   gap: 50px;
 }
@@ -120,9 +120,8 @@ footer .footer__container {
   border: 1.5px solid #000000;
 }
 
-.section__button--highlighted, .books__ranking__item .book__button, .hero__button {
+.section__button--highlighted, .books__ranking__item .book__button, .team__text .hero__button, .hero__button {
   display: flex;
-  width: 270px;
   height: 50px;
   justify-content: center;
   align-items: center;
@@ -152,17 +151,19 @@ footer .footer__container {
 /* Common titles */
 .section__title--side, .contact__title h3, .team__text h3 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 36px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .section__title--center, .trends h2, .trends h1, .podcasts h2, .podcasts h1, .cv-templates h1, .cv-templates h2, .books h1, .books h2, .resources h3, .we-are__text h3, .services__title--big h3 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 42px;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section__paragraph--side, .trends p, .podcasts p, .cv-templates p, .books p, .team__text p, .we-are__text p {
@@ -238,9 +239,10 @@ header .navbar__menu li .navbar__menu__item--first {
 .hero__text--big {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 48px;
   margin: 40px 0;
   color: #000000;
+  text-transform: uppercase;
 }
 .hero__text--small {
   font-family: "League Spartan", sans-serif;
@@ -257,6 +259,10 @@ header .navbar__menu li .navbar__menu__item--first {
   height: 100%;
   width: 100%;
 }
+.hero__button {
+  width: 270px;
+}
+
 .services {
   margin: 30px 50px;
 }
@@ -300,6 +306,7 @@ header .navbar__menu li .navbar__menu__item--first {
   margin: 0 50px;
 }
 .team__text .hero__button {
+  width: 210px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -537,8 +544,11 @@ footer .footer__container i {
     font-size: 20px;
   }
   .section__title--side, .team__text h3, .contact__title h3 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 24px;
+  }
+  .section__title--center, .services__title--big h3, .we-are__text h3, .resources h3, .books h1, .books h2, .cv-templates h1, .cv-templates h2, .podcasts h1, .podcasts h2, .trends h1, .trends h2 {
+    font-size: 40px;
   }
   .section__paragraph--side, .we-are__text p, .team__text p, .books p, .cv-templates p, .podcasts p, .trends p {
     font-family: "League Spartan", sans-serif;
@@ -663,6 +673,9 @@ footer .footer__container i {
   main .services .services__container {
     grid-template-columns: 1fr;
   }
+  main .services .services__container__item img {
+    width: 40%;
+  }
   main .we-are {
     grid-template-columns: 1fr;
     gap: 0;
@@ -682,6 +695,8 @@ footer .footer__container i {
   main .team__img {
     order: 2;
     display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   main .team__img img {
     margin: 0 auto;
@@ -721,6 +736,9 @@ footer .footer__container i {
   main .books__ranking .books__ranking__book-container .books__ranking__item a {
     justify-self: center;
   }
+  main .books__ranking .books__ranking__book-container .books__ranking__item p {
+    text-align: start;
+  }
   main .books__ranking .books__ranking__book-container .books__ranking__item img {
     max-width: 200px;
     padding-right: 20px;
@@ -732,8 +750,17 @@ footer .footer__container i {
   main .books .library__button {
     width: 450px;
   }
+  main .books p {
+    text-align: center;
+  }
+  main .cv-templates p {
+    text-align: center;
+  }
   main .podcasts h1, main .podcasts h2 {
     font-size: 47px;
+  }
+  main .podcasts p {
+    text-align: center;
   }
   main .podcasts__topic__container h3 {
     font-size: 28px;
