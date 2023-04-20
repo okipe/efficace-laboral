@@ -28,16 +28,17 @@ $text-font: 'League Spartan', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
     scroll-behavior: smooth;
     margin: 0 auto;
-    background-color: $background-1-color;
+    background-color: whitesmoke;
 }
 
 header {
-    max-width: 1200px;
+    max-width: 1200px;  
     margin: 0 auto;
 }
 

@@ -12,7 +12,7 @@
 html {
   scroll-behavior: smooth;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: whitesmoke;
 }
 
 header {
@@ -62,7 +62,7 @@ main .we-are__text {
 }
 main .team {
   display: grid;
-  grid-template-columns: minmax(200px, 500px) minmax(350px, 540px);
+  grid-template-columns: minmax(200px, 603px) minmax(263px, 524px);
   justify-content: space-between;
   gap: 50px;
 }
@@ -346,7 +346,7 @@ blockquote p::after {
 
 blockquote p::after {
   content: "”";
-  margin: -2.5rem 0 0 -1rem;
+  margin: -2.5rem 0 0 -0.5rem;
 }
 
 .resources {
