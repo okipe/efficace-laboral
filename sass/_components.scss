@@ -29,6 +29,24 @@
     border: 1.5px solid $primary-3-color;
     font-family: $text-font;
     font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-color;
+}
+
+.section__button--highlighted-center {
+    display: flex;
+    // width: 270px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1.5px solid $primary-3-color;
+    font-family: $text-font;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     color: $text-color;
 }
@@ -245,7 +263,6 @@ header {
     &__img img {
         width: 100%;
     }
-
 }
 
 .team {
@@ -253,59 +270,94 @@ header {
 
     &__text {
         h3 {
-            @extend .section__title--side;
+            @extend .section__title--center;
         }
 
         p {
             @extend .section__paragraph--side;
+            text-align: center;
         }
 
-        .hero__button {
-            @extend .section__button--highlighted;
-            width: 210px;
-            margin-top: 20px;
-            margin-bottom: 30px;
+    }
+
+    &__container {
+        
+        margin-top: 60px;
+        margin-left: 15%;
+        margin-right: 15%;
+        a {
+            text-decoration: none;
+        }
+
+        &__item {
+        flex-direction: column;
+        justify-self: center;
+
+            img {
+                width: 200px;
+                margin: 0 auto;
+            }
+
+            p {
+                font-family: $text-font;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 30px;
+                text-align: center;
+                align-items: center;
+                color: $text-color;
+                text-decoration: none;
+            }
         }
     }
 
-    &__img img {
-        width: 100%;
-        // margin: 0 60px;
+    // &__img img {
+    //     width: 100%;
+    //     // margin: 0 60px;
+    // }
+
+    blockquote {
+        color: $text-color;
+        font-family: $text-font;
+        font-size: 24px;
+        width: 80%;
+        margin: 30px auto 30px auto;
+        text-align: center;
+     }
+     blockquote h1 {
+        font-size: 4rem;
+     }
+     blockquote p {
+        font-style: italic;
+        margin-bottom: 0;
+        line-height: 1.5;
+        text-align: center;
+     }
+     
+     blockquote p::before,
+     blockquote p::after {
+        content: "“";
+        font-family: $text-font;
+        font-size: 7rem;
+        margin: -2.5rem 0 0 -4rem;
+        position: absolute;
+        color: gray;
+     }
+     
+     blockquote p::after {
+        content: "”";
+        margin: -2.5rem 0 0 -0.5rem;
+     }
+
+    .hero__button {
+        @extend .section__button--highlighted-center;
+        width: 210px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 
-blockquote {
-    color: $text-color;
-    font-family: $text-font;
-    font-size: 24px;
-    width: 80%;
-    margin: 100px auto 40px auto;
-    text-align: center;
- }
- blockquote h1 {
-    font-size: 4rem;
- }
- blockquote p {
-    font-style: italic;
-    margin-bottom: 0;
-    line-height: 1.5;
-    text-align: center;
- }
- 
- blockquote p::before,
- blockquote p::after {
-    content: "“";
-    font-family: $text-font;
-    font-size: 7rem;
-    margin: -2.5rem 0 0 -4rem;
-    position: absolute;
-    color: gray;
- }
- 
- blockquote p::after {
-    content: "”";
-    margin: -2.5rem 0 0 -0.5rem;
- }
+
 
 .resources {
     margin: 50px 50px 0 50px;
@@ -525,6 +577,7 @@ footer {
 
 /* MEDIA QUERIES */
 
+// $breakpoint-xxl: 1400px;
 @media all and (max-width: $breakpoint-xxl) {
     header{
         nav .navbar__menu {
@@ -558,7 +611,8 @@ footer {
     // }
 }
 
-@media all and (max-width: $breakpoint-xl) {
+// $breakpoint-xl: 1200px;
+@media all and (max-width: $breakpoint-xl) { 
     header .navbar__menu {
         justify-content: space-between;
         width: 630px;
@@ -695,6 +749,7 @@ footer {
     }
 }
 
+// $breakpoint-lg: 960px;
 @media all and (max-width: $breakpoint-lg) {
     
     header {
@@ -785,6 +840,7 @@ footer {
     }
 }
 
+// $breakpoint-md: 768px;
 @media all and (max-width: $breakpoint-md) {
     main .hero {
         grid-template-columns: 1fr;
@@ -830,8 +886,19 @@ footer {
 
     main .team {
         grid-template-columns: 1fr;
-        gap: 0;
 
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+            &__item img {
+                width: 40%;
+            }
+        }
+
+        /*
         &__img {
             order: 2;
             display: flex;
@@ -842,6 +909,7 @@ footer {
                 margin: 0 auto;
             }
         }
+        */
 
         &__text {
             h3 {

@@ -43,13 +43,11 @@ main {
     }
 
     .services {
-
         &__container {
             display: grid;
             grid-template-columns: repeat(3, minmax(75px, 500px));
             grid-template-rows: 1fr;
             // gap: 100px;
-            
 
             &__item {
                 display: flex;
@@ -71,6 +69,29 @@ main {
 
     .team {
         display: grid;
+        grid-template-columns: 1fr;
+        // gap: 50px;
+
+        &__text {
+            align-self: center;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(125px, 600px));
+            grid-template-rows: 1fr;
+            // gap: 100px;
+
+            &__item {
+                display: flex;
+                // border: 1px solid #000;
+
+            }
+        }
+    }
+
+    /* .team {
+        display: grid;
         grid-template-columns: minmax(200px, 603px) minmax(263px, 524px);
         justify-content: space-between;
         // grid-template-columns: repeat(2, minmax(200px, 600px));
@@ -80,7 +101,7 @@ main {
         &__text {
             align-self: center;
         }
-    }
+    } */
 
     .resources__grid {
         display: grid;
