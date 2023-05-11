@@ -211,8 +211,16 @@ header {
     margin: 30px 50px;
     // width: 1400px;
     
-    &__title--big h3 {
-        @extend .section__title--center; 
+    &__title--big {
+        h3 {
+            @extend .section__title--center;    
+        }
+
+        p {
+            @extend .section__paragraph--side;
+            text-align: center;
+            margin-bottom: 40px;
+        }
     }
 
     &__container {
@@ -257,7 +265,6 @@ header {
             text-align: center;
             margin-bottom: 40px;
         }
-
     }
 
     &__img img {
@@ -349,6 +356,13 @@ header {
         margin: -1.6rem 0 0 -0.3rem;
      }
 
+     #blockquote_with_quotation {
+        display: flex;
+     }
+     #blockquote_without_quotation {
+        display: none;
+     }
+
     .hero__button {
         @extend .section__button--highlighted-center;
         width: 210px;
@@ -356,8 +370,6 @@ header {
         margin-bottom: 30px;
     }
 }
-
-
 
 .resources {
     margin: 50px 50px 0 50px;
@@ -668,6 +680,10 @@ footer {
         }
     }
 
+    main .team .team__container .team__container__item p {
+        font-size: 20px;
+    }
+
     blockquote p {
         font-size: 20px;
     }
@@ -693,11 +709,11 @@ footer {
         line-height: 1.3;
     }
 
-    .contact {
+    main .contact {
     
         &__title {
             h3 {
-                @extend .section__title--side;
+                margin-bottom: 42px;
             }
         }
     
@@ -756,8 +772,6 @@ footer {
         width: 100%;
     }
 
-    
-
     header .header__open-button--mobile {
         display: block; /*Button of open*/
         border: 0;
@@ -814,6 +828,18 @@ footer {
         }
     }
 
+    blockquote p::before,
+    blockquote p::after {
+        visibility: hidden;
+    }
+
+    .team #blockquote_without_quotation {
+            display: flex;
+        }
+    .team #blockquote_with_quotation {
+            display: none;
+        }
+
     main .cv-templates {
         &__ranking .cv-templates__ranking__container {
             margin-left: auto;
@@ -861,9 +887,11 @@ footer {
     
     main .services .services__container {
         grid-template-columns: 1fr;
-
-        &__item img {
-            width: 40%;
+        
+        &__item {
+            img {
+                width: 40%;
+            }
         }
     }
 
@@ -874,6 +902,10 @@ footer {
         &__text {
             h3, p {
                 text-align: center;
+            }
+
+            h3 {
+                margin-top: -20px;
             }
         }
 
@@ -892,6 +924,7 @@ footer {
             gap: 0;
             margin-left: 0;
             margin-right: 0;
+            margin-top: 64px;
 
             &__item img {
                 width: 40%;
