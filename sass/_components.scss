@@ -100,6 +100,13 @@
     color: $text-color;
 }
 
+.section__title-3rd--small {
+    font-family: $title-font;
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: $text-color;
+}
+
 header {
     padding: 20px 30px;
 
@@ -449,6 +456,7 @@ header {
 
     p {
         @extend .section__paragraph--side;
+        text-align: center;
     }
 
     &__ranking {
@@ -459,7 +467,8 @@ header {
 
         &__item {
             h3 {
-                @extend .section__title-2nd--small;
+                @extend .section__title-3rd--small;
+                text-transform: uppercase;
             }
 
             img {
@@ -470,6 +479,10 @@ header {
             .book__button {
                 @extend .section__button--highlighted;
                 margin-top: 20px;
+            }
+
+            p {
+                text-align: left;
             }
         }
     }
@@ -492,6 +505,7 @@ header {
 
     p {
         @extend .section__paragraph--side;
+        text-align: center;
     }
 
     &__ranking__container {
@@ -525,11 +539,13 @@ header {
 
     p {
         @extend .section__paragraph--side;
+        text-align: center;
     }
 
     &__topic__container {
         h3 {
-            @extend .section__title-2nd--small;
+            @extend .section__title-3rd--small;
+            text-transform: uppercase;
         }
     }
 }
@@ -548,7 +564,7 @@ header {
 
     p {
         @extend .section__paragraph--side;
-        text-align: justify;
+        text-align: center;
     }
 
     &__container {

@@ -214,9 +214,16 @@ footer .footer__container {
   line-height: 1.3;
 }
 
-.section__title-2nd--small, .trends__container, .podcasts__topic__container h3, .books__ranking__item h3 {
+.section__title-2nd--small, .trends__container {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 36px;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.section__title-3rd--small, .podcasts__topic__container h3, .books__ranking__item h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
   margin-bottom: 24px;
   color: #000000;
 }
@@ -473,12 +480,21 @@ header .navbar__menu li .navbar__menu__item--first {
 .books h1, .books h2 {
   margin-top: 50px;
 }
+.books p {
+  text-align: center;
+}
+.books__ranking__item h3 {
+  text-transform: uppercase;
+}
 .books__ranking__item img {
   max-width: 250px;
   padding-right: 30px;
 }
 .books__ranking__item .book__button {
   margin-top: 20px;
+}
+.books__ranking__item p {
+  text-align: left;
 }
 .books .library__button {
   margin-top: 100px;
@@ -490,6 +506,9 @@ header .navbar__menu li .navbar__menu__item--first {
 }
 .cv-templates h1, .cv-templates h2 {
   margin-top: 50px;
+}
+.cv-templates p {
+  text-align: center;
 }
 .cv-templates__ranking__container {
   margin: 50px 0 125px 0;
@@ -509,6 +528,13 @@ header .navbar__menu li .navbar__menu__item--first {
 .podcasts h2 {
   margin-top: 60px;
 }
+.podcasts p {
+  text-align: center;
+}
+.podcasts__topic__container h3 {
+  text-transform: uppercase;
+}
+
 .trends {
   margin: 0 50px;
 }
@@ -516,7 +542,7 @@ header .navbar__menu li .navbar__menu__item--first {
   margin-top: 60px;
 }
 .trends p {
-  text-align: justify;
+  text-align: center;
 }
 .trends__container {
   margin-top: 40px;
