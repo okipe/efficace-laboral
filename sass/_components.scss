@@ -363,12 +363,12 @@ header {
         margin: -1.6rem 0 0 -0.3rem;
      }
 
-     #blockquote_with_quotation {
+    /*  #blockquote_with_quotation {
         display: flex;
      }
      #blockquote_without_quotation {
         display: none;
-     }
+     } */
 
     .hero__button {
         @extend .section__button--highlighted-center;
@@ -851,7 +851,7 @@ footer {
         }
     }
 
-    blockquote p::before,
+/*     blockquote p::before,
     blockquote p::after {
         visibility: hidden;
     }
@@ -861,7 +861,7 @@ footer {
         }
     .team #blockquote_with_quotation {
             display: none;
-        }
+        } */
 
     main .cv-templates {
         &__ranking .cv-templates__ranking__container {
