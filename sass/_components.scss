@@ -203,6 +203,7 @@ header {
         justify-content: center;
 
         img {
+            object-fit: contain;
             height: 100%;
             width: 100%;
         }
@@ -338,6 +339,7 @@ header {
         margin: 30px auto 30px auto;
         text-align: center;
      }
+
      blockquote h1 {
         font-size: 4rem;
      }
@@ -347,6 +349,7 @@ header {
         line-height: 1.5;
         text-align: center;
      }
+     /* Desactivado por cambio
      
      blockquote p::before,
      blockquote p::after {
@@ -361,7 +364,8 @@ header {
      blockquote p::after {
         content: "”";
         margin: -1.6rem 0 0 -0.3rem;
-     }
+     }*/
+
 
     /*  #blockquote_with_quotation {
         display: flex;
@@ -369,6 +373,13 @@ header {
      #blockquote_without_quotation {
         display: none;
      } */
+
+     #blockquote_desktop {
+        display: grid;
+     }
+     #blockquote_mobile {
+        display: none;
+     }
 
     .hero__button {
         @extend .section__button--highlighted-center;
@@ -571,6 +582,11 @@ header {
          @extend .section__title-2nd--small;
          margin-top: 40px;
          margin-bottom: 60px;
+         
+         h3 {
+            text-transform: uppercase;
+            @extend .section__title-3rd--small;
+         }
     }
 }
 
@@ -1127,6 +1143,13 @@ footer {
             text-align: center;
         }
     }
+
+    main .team #blockquote_desktop {
+        display: none;
+     }
+    main .team #blockquote_mobile {
+        display: grid;
+     }
 
     main .cv-templates {
         &__ranking .cv-templates__ranking__container {

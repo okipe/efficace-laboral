@@ -221,7 +221,7 @@ footer .footer__container {
   color: #000000;
 }
 
-.section__title-3rd--small, .podcasts__topic__container h3, .books__ranking__item h3 {
+.section__title-3rd--small, .trends__container h3, .podcasts__topic__container h3, .books__ranking__item h3 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 32px;
   margin-bottom: 24px;
@@ -303,6 +303,7 @@ header .navbar__menu li .navbar__menu__item--first {
   justify-content: center;
 }
 .hero__img img {
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -355,6 +356,22 @@ header .navbar__menu li .navbar__menu__item--first {
 
 .team {
   margin: 0 50px;
+  /* Desactivado por cambio
+
+  blockquote p::before,
+  blockquote p::after {
+     content: "“";
+     font-family: $text-font;
+     font-size: 4rem;
+     margin: -1.5rem 0 0 -2.5rem;
+     position: absolute;
+     color: gray;
+  }
+
+  blockquote p::after {
+     content: "”";
+     margin: -1.6rem 0 0 -0.3rem;
+  }*/
   /*  #blockquote_with_quotation {
       display: flex;
    }
@@ -408,18 +425,11 @@ header .navbar__menu li .navbar__menu__item--first {
   line-height: 1.5;
   text-align: center;
 }
-.team blockquote p::before,
-.team blockquote p::after {
-  content: "“";
-  font-family: "League Spartan", sans-serif;
-  font-size: 4rem;
-  margin: -1.5rem 0 0 -2.5rem;
-  position: absolute;
-  color: gray;
+.team #blockquote_desktop {
+  display: grid;
 }
-.team blockquote p::after {
-  content: "”";
-  margin: -1.6rem 0 0 -0.3rem;
+.team #blockquote_mobile {
+  display: none;
 }
 .team .hero__button {
   width: 210px;
@@ -548,6 +558,9 @@ header .navbar__menu li .navbar__menu__item--first {
   margin-top: 40px;
   margin-bottom: 60px;
 }
+.trends__container h3 {
+  text-transform: uppercase;
+}
 
 .yt-video {
   aspect-ratio: 16/9;
@@ -580,17 +593,15 @@ footer .footer__container i {
   header nav .navbar__menu {
     padding-left: 50px;
   }
-
   .hero,
-.services,
-.we-are,
-.team,
-.resources,
-.contact {
+  .services,
+  .we-are,
+  .team,
+  .resources,
+  .contact {
     margin-left: 50px;
     margin-right: 50px;
   }
-
   .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 1fr;
   }
@@ -600,7 +611,6 @@ footer .footer__container i {
     justify-content: space-between;
     width: 630px;
   }
-
   main .hero {
     height: 500px;
     margin: 0 40px;
@@ -624,7 +634,6 @@ footer .footer__container i {
     color: #000000;
     line-height: 1.3;
   }
-
   main .services {
     margin: 30px 50px;
   }
@@ -638,28 +647,22 @@ footer .footer__container i {
     font-size: 20px;
     line-height: 1.3;
   }
-
   main .team .team__container .team__container__item p {
     font-size: 20px;
   }
-
   blockquote p {
     font-size: 20px;
   }
-
   main .resources__grid p {
     font-size: 20px;
   }
-
   .section__title--side, .contact__title h3 {
     font-size: 40px;
     margin-bottom: 24px;
   }
-
   .section__title--center, .services__title--big h3, .we-are__text h3, .team__text h3, .resources h3, .books h1, .books h2, .cv-templates h1, .cv-templates h2, .podcasts h1, .podcasts h2, .trends h1, .trends h2 {
     font-size: 40px;
   }
-
   .section__paragraph--side, .services__title--big p, .we-are__text p, .team__text p, .books p, .cv-templates p, .podcasts p, .trends p {
     font-family: "League Spartan", sans-serif;
     font-size: 20px;
@@ -667,7 +670,6 @@ footer .footer__container i {
     color: #000000;
     line-height: 1.3;
   }
-
   main .contact__title h3 {
     margin-bottom: 42px;
   }
@@ -690,7 +692,6 @@ footer .footer__container i {
   main .contact a {
     color: #000000;
   }
-
   main .books__ranking__item img {
     padding-right: 0;
   }
@@ -698,7 +699,6 @@ footer .footer__container i {
     grid-template-columns: 1fr;
     row-gap: 50px;
   }
-
   footer .footer__container p {
     font-size: 20px;
   }
@@ -710,21 +710,17 @@ footer .footer__container i {
   html {
     background-size: 100%;
   }
-
   header {
     width: 100%;
   }
-
   header .header__open-button--mobile {
-    display: block;
-    /*Button of open*/
+    display: block; /*Button of open*/
     border: 0;
     font-size: 40px;
     background-color: transparent;
     color: #000000;
     cursor: pointer;
   }
-
   header .navbar {
     opacity: 0;
     visibility: hidden;
@@ -732,8 +728,7 @@ footer .footer__container i {
     flex-direction: column;
     align-items: end;
     gap: 1rem;
-    position: fixed;
-    /* The mobile menu will be fixed in the screen*/
+    position: fixed; /* The mobile menu will be fixed in the screen*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -750,8 +745,7 @@ footer .footer__container i {
     width: 300px;
   }
   header .navbar__close-button--mobile {
-    display: block;
-    /*Button of close*/
+    display: block; /*Button of close*/
     border: 0;
     font-size: 40px;
     background-color: transparent;
@@ -765,7 +759,6 @@ footer .footer__container i {
     border-radius: 2rem;
     padding: 6px 20px;
   }
-
   /*     blockquote p::before,
       blockquote p::after {
           visibility: hidden;
@@ -783,14 +776,12 @@ footer .footer__container i {
     grid-template-columns: 1fr 1fr;
     gap: 5%;
   }
-
   main .podcasts .podcasts__topic__container {
     grid-template-columns: 1fr;
   }
   main .podcasts .podcasts__topic__container__item h3 {
     font-size: 32px;
   }
-
   main .trends__container__item h3 {
     font-size: 32px;
   }
@@ -799,7 +790,6 @@ footer .footer__container i {
   html {
     background-size: 140%;
   }
-
   main .hero {
     grid-template-columns: 1fr;
   }
@@ -813,14 +803,12 @@ footer .footer__container i {
     display: inline-flex;
     justify-self: center;
   }
-
   main .services .services__container {
     grid-template-columns: 1fr;
   }
   main .services .services__container__item img {
     width: 40%;
   }
-
   main .we-are {
     grid-template-columns: 1fr;
     gap: 0;
@@ -836,7 +824,6 @@ footer .footer__container i {
     justify-self: center;
     margin-bottom: 50px;
   }
-
   main .team {
     grid-template-columns: 1fr;
     /*
@@ -872,12 +859,10 @@ footer .footer__container i {
     display: flex;
     margin: 20px auto 60px auto;
   }
-
   main .resources__grid {
     grid-template-columns: 1fr;
     margin: 0 auto;
   }
-
   main .contact {
     margin-top: 40px;
     grid-template-columns: 1fr;
@@ -889,7 +874,6 @@ footer .footer__container i {
   main .contact .contact__text__icons__item p {
     text-align: left;
   }
-
   main .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 2fr;
   }
@@ -916,11 +900,9 @@ footer .footer__container i {
   main .books p {
     text-align: center;
   }
-
   main .cv-templates p {
     text-align: center;
   }
-
   main .podcasts h1, main .podcasts h2 {
     font-size: 47px;
   }
@@ -930,7 +912,6 @@ footer .footer__container i {
   main .podcasts__topic__container h3 {
     font-size: 28px;
   }
-
   main .trends h1, main .trends h2 {
     font-size: 47px;
   }
@@ -943,7 +924,6 @@ footer .footer__container i {
   main .trends__container h3 {
     font-size: 28px;
   }
-
   footer .footer__container {
     flex-direction: column;
     align-items: center;
@@ -959,11 +939,9 @@ footer .footer__container i {
   html {
     background-size: 180%;
   }
-
   main .hero {
     margin-bottom: 60px;
   }
-
   main .books h1 {
     font-size: 47px;
   }
@@ -975,7 +953,12 @@ footer .footer__container i {
     width: 230px;
     text-align: center;
   }
-
+  main .team #blockquote_desktop {
+    display: none;
+  }
+  main .team #blockquote_mobile {
+    display: grid;
+  }
   main .cv-templates__ranking .cv-templates__ranking__container {
     grid-template-columns: 1fr;
     gap: 20px;
