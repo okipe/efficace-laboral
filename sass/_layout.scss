@@ -15,10 +15,7 @@ header {
 
         &__menu {
             align-items: center;
-            display: flex;
-            // display: grid;
-            // grid-template-columns: 1fr repeat(4, 2fr);
-            
+            display: flex;            
         }
     }
 
@@ -36,8 +33,8 @@ main {
 
     .hero {
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 600px));
-        justify-content: space-between;
+        grid-template-columns: minmax(200px, 800px);
+        justify-content: center;
         // border: 1px solid #000;
 
     }
@@ -45,14 +42,12 @@ main {
     .services {
         &__container {
             display: grid;
-            grid-template-columns: repeat(3, minmax(75px, 500px));
+            grid-template-columns: repeat(3, minmax(75px, 600px));
             grid-template-rows: 1fr;
             // gap: 100px;
 
             &__item {
                 display: flex;
-                // border: 1px solid #000;
-
             }
         }
     }
@@ -85,7 +80,6 @@ main {
             &__item {
                 display: flex;
                 // border: 1px solid #000;
-
             }
         }
     }
