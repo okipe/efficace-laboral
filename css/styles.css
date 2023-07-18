@@ -641,7 +641,7 @@ footer .footer__container i {
     font-size: 18px;
   }
   main .hero {
-    margin: 0 40px;
+    margin: 0px;
     grid-template-columns: minmax(200px, 700px);
     animation: none;
   }
@@ -667,6 +667,10 @@ footer .footer__container i {
   main .services__container__item {
     width: 96%;
   }
+  .quote-team__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
   main .team .team__container .team__container__item p {
     font-size: 20px;
   }
@@ -687,14 +691,20 @@ footer .footer__container i {
     color: #000000;
     line-height: 1.3;
   }
+  main .contact {
+    margin: 50px 0 0 0;
+  }
   main .contact__title h3 {
     margin-bottom: 42px;
   }
   main .contact p {
     font-family: "Hanken Grotesk", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
     line-height: 1.3;
+  }
+  main .contact__text {
+    width: 50%;
   }
   main .contact__text__icons__item {
     display: flex;
@@ -716,6 +726,9 @@ footer .footer__container i {
     grid-template-columns: 1fr;
     row-gap: 50px;
   }
+  footer {
+    margin-top: -5px;
+  }
   footer .footer__container p {
     font-size: 20px;
   }
@@ -729,6 +742,16 @@ footer .footer__container i {
   }
   header {
     width: 100%;
+  }
+  header .hero,
+  header .we-are,
+  header .services,
+  header .quote-team__container,
+  header .team,
+  header .resources,
+  header .contact {
+    margin-left: 0;
+    margin-right: 0;
   }
   header .header__open-button--mobile {
     display: block; /*Button of open*/
@@ -776,11 +799,68 @@ footer .footer__container i {
     border-radius: 2rem;
     padding: 6px 20px;
   }
+  main .hero {
+    grid-template-columns: minmax(200px, 600px);
+  }
+  main .hero__text--big {
+    line-height: 120%;
+  }
+  main .hero__text--small {
+    line-height: 150%;
+  }
+  main .services__container {
+    grid-template-columns: minmax(75px, 498px);
+    justify-content: center;
+  }
+  main .services__container__item {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: 0 auto 24px auto;
+  }
+  main .services__container__item img {
+    width: auto;
+    height: auto;
+  }
+  main .quote-team__container {
+    position: relative;
+    width: auto;
+    height: 700px;
+  }
+  main .quote-team__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .quote-team__container__text {
+    width: 66%;
+  }
+  main .team .team__container {
+    grid-template-columns: minmax(200px, 498px);
+    justify-content: center;
+  }
+  main .team .team__container__item {
+    justify-content: center;
+    margin: 0 auto 24px auto;
+    width: auto;
+  }
+  main .contact {
+    position: relative;
+    width: auto;
+    height: 700px;
+  }
+  main .contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .contact__text {
+    width: 50%;
+  }
   main .cv-templates__ranking .cv-templates__ranking__container {
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr 1fr;
-    gap: 5%;
   }
   main .podcasts .podcasts__topic__container {
     grid-template-columns: 1fr;
@@ -796,24 +876,11 @@ footer .footer__container i {
   html {
     background-size: 140%;
   }
-  main .hero {
-    grid-template-columns: 1fr;
-  }
-  main .hero__text {
-    text-align: center;
-  }
-  main .hero__img {
-    display: none;
-  }
-  main .hero__button {
-    display: inline-flex;
-    justify-self: center;
-  }
   main .services .services__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(75px, 498px);
   }
   main .services .services__container__item img {
-    width: 40%;
+    width: 100%;
   }
   main .we-are {
     grid-template-columns: 1fr;
@@ -832,28 +899,6 @@ footer .footer__container i {
   }
   main .team {
     grid-template-columns: 1fr;
-    /*
-    &__img {
-        order: 2;
-        display: flex;
-        padding-left: 15%;
-        padding-right: 15%;
-
-        img {
-            margin: 0 auto;
-        }
-    }
-    */
-  }
-  main .team__container {
-    grid-template-columns: 1fr;
-    gap: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 64px;
-  }
-  main .team__container__item img {
-    width: 40%;
   }
   main .team__text h3 {
     text-align: center;
@@ -874,8 +919,8 @@ footer .footer__container i {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  main .contact h3, main .contact p {
-    text-align: center;
+  main .contact__text {
+    width: 66%;
   }
   main .contact .contact__text__icons__item p {
     text-align: left;
@@ -942,9 +987,6 @@ footer .footer__container i {
   }
 }
 @media all and (max-width: 576px) {
-  html {
-    background-size: 180%;
-  }
   main .hero {
     margin-bottom: 60px;
   }
