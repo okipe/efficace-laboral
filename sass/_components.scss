@@ -242,6 +242,14 @@ header {
     background-size: cover;
     position: relative;
 
+    .desktop-version {
+        display: block; /* visible en pantallas grandes */
+    }
+      
+    .mobile-version {
+        display: none; /* oculto en pantallas grandes */
+    }
+
     &__text {
         align-self: center;
         margin: 0 10px;
@@ -702,6 +710,9 @@ footer {
     }
 
     .books {
+        margin-left: 50px;
+        margin-right: 50px;
+
         &__ranking .books__ranking__book-container .books__ranking__item  {
             grid-template-columns: 1fr 1fr;
         }
@@ -766,9 +777,15 @@ footer {
         margin-right: 0;
     }
 
-    main .team .team__container .team__container__item p {
-        font-size: 20px;
+    main .team .team__container {
+
+        &__item p {
+            font-size: 20px;
+        }
     }
+    // main .team .team__container .team__container__item p {
+    //     font-size: 20px;
+    // }
 
     main .resources__grid p {
         font-size: 20px;
@@ -866,6 +883,10 @@ footer {
         //height: 100%;
     }
 
+    header nav .navbar__menu {
+        width: 300px;
+    }
+
     header {
         width: 100%;
 
@@ -895,6 +916,7 @@ footer {
         opacity: 0;
         visibility: hidden;
         //----
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -911,7 +933,8 @@ footer {
         &__menu {
             flex-direction: column;
             align-items: end;
-            line-height: 5rem;
+            //justify-content: center;
+            line-height: 4rem;
             font-size: 28px;
             width: 300px;
             }
@@ -932,13 +955,22 @@ footer {
             
             li:last-child {
             border-radius: 2rem;
-            padding: 6px 20px;
+            align-items: center;
+            padding: 1px 20px;
             }
         }
     }
 
     main .hero {
         grid-template-columns: minmax(200px, 600px);
+
+        .desktop-version {
+            display: none; /* oculto en pantallas grandes */
+        }
+          
+        .mobile-version {
+            display: block; /* visible en pantallas grandes */
+        }
 
         &__text {
                 &--big {
@@ -1223,21 +1255,57 @@ footer {
     //     background-size: 180%;
     //     height: 100%;
     // }
-    
-    
-    main .hero {
+
+    header nav .navbar__menu {
+        width: 270px;
+    }
+
+    .section__button--highlighted {
+        max-width: 200px;
+        height: 80px;
+        padding: 10px;
+    }
+
+    main .quote-team__container {
+        margin-top: 40px;
         margin-bottom: 60px;
     }
 
+    main .team .team__container {
+        margin-bottom: 40px;
+
+        &__item p {
+            font-size: 18px;
+        }
+    }
+    
+    main .contact__text {
+        width: 100%;
+    }
+
+    // main .hero {
+    //     margin-bottom: 60px;
+    // }
+
+    main .podcasts {
+        h1, h2 {
+            font-size: 36px;
+        }
+    }
+    
     main .books {
-        h1 {
-            font-size: 47px;
+        h1, h2 {
+            font-size: 36px;
         }
 
         &__ranking .books__ranking__book-container {
 
             .books__ranking__item {
                 grid-template-columns: 1fr;
+
+                a {
+                    margin-bottom: 20px;
+                }
             }
         }
 
@@ -1245,6 +1313,13 @@ footer {
             font-size: 22px;
             width: 230px;
             text-align: center;
+        }
+    }
+
+    main .trends {
+
+        h1 {
+            font-size: 36px;
         }
     }
 

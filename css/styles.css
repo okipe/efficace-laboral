@@ -329,6 +329,12 @@ header .navbar__menu li .navbar__menu__item--first {
   background-size: cover;
   position: relative;
 }
+.hero .desktop-version {
+  display: block; /* visible en pantallas grandes */
+}
+.hero .mobile-version {
+  display: none; /* oculto en pantallas grandes */
+}
 .hero__text {
   align-self: center;
   margin: 0 10px;
@@ -628,6 +634,10 @@ footer .footer__container i {
   .quote-team__container p {
     font-size: 20px;
   }
+  .books {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr 1fr;
   }
@@ -671,7 +681,7 @@ footer .footer__container i {
     margin-left: 0;
     margin-right: 0;
   }
-  main .team .team__container .team__container__item p {
+  main .team .team__container__item p {
     font-size: 20px;
   }
   main .resources__grid p {
@@ -740,6 +750,9 @@ footer .footer__container i {
   html {
     background-size: 100%;
   }
+  header nav .navbar__menu {
+    width: 300px;
+  }
   header {
     width: 100%;
   }
@@ -764,6 +777,7 @@ footer .footer__container i {
   header .navbar {
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -780,7 +794,7 @@ footer .footer__container i {
   header .navbar__menu {
     flex-direction: column;
     align-items: end;
-    line-height: 5rem;
+    line-height: 4rem;
     font-size: 28px;
     width: 300px;
   }
@@ -797,10 +811,17 @@ footer .footer__container i {
   }
   header .navbar__menu li:last-child {
     border-radius: 2rem;
-    padding: 6px 20px;
+    align-items: center;
+    padding: 1px 20px;
   }
   main .hero {
     grid-template-columns: minmax(200px, 600px);
+  }
+  main .hero .desktop-version {
+    display: none; /* oculto en pantallas grandes */
+  }
+  main .hero .mobile-version {
+    display: block; /* visible en pantallas grandes */
   }
   main .hero__text--big {
     line-height: 120%;
@@ -987,19 +1008,46 @@ footer .footer__container i {
   }
 }
 @media all and (max-width: 576px) {
-  main .hero {
+  header nav .navbar__menu {
+    width: 270px;
+  }
+  .section__button--highlighted, .hero__button, .books__ranking__item .book__button {
+    max-width: 200px;
+    height: 80px;
+    padding: 10px;
+  }
+  main .quote-team__container {
+    margin-top: 40px;
     margin-bottom: 60px;
   }
-  main .books h1 {
-    font-size: 47px;
+  main .team .team__container {
+    margin-bottom: 40px;
+  }
+  main .team .team__container__item p {
+    font-size: 18px;
+  }
+  main .contact__text {
+    width: 100%;
+  }
+  main .podcasts h1, main .podcasts h2 {
+    font-size: 36px;
+  }
+  main .books h1, main .books h2 {
+    font-size: 36px;
   }
   main .books__ranking .books__ranking__book-container .books__ranking__item {
     grid-template-columns: 1fr;
+  }
+  main .books__ranking .books__ranking__book-container .books__ranking__item a {
+    margin-bottom: 20px;
   }
   main .books .library__button {
     font-size: 22px;
     width: 230px;
     text-align: center;
+  }
+  main .trends h1 {
+    font-size: 36px;
   }
   main .cv-templates__ranking .cv-templates__ranking__container {
     grid-template-columns: 1fr;
