@@ -15,10 +15,7 @@ header {
 
         &__menu {
             align-items: center;
-            display: flex;
-            // display: grid;
-            // grid-template-columns: 1fr repeat(4, 2fr);
-            
+            display: flex;            
         }
     }
 
@@ -36,8 +33,8 @@ main {
 
     .hero {
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 600px));
-        justify-content: space-between;
+        grid-template-columns: minmax(200px, 800px);
+        justify-content: center;
         // border: 1px solid #000;
 
     }
@@ -45,14 +42,12 @@ main {
     .services {
         &__container {
             display: grid;
-            grid-template-columns: repeat(3, minmax(75px, 500px));
+            grid-template-columns: repeat(3, minmax(75px, 600px));
             grid-template-rows: 1fr;
             // gap: 100px;
 
             &__item {
                 display: flex;
-                // border: 1px solid #000;
-
             }
         }
     }
@@ -85,23 +80,9 @@ main {
             &__item {
                 display: flex;
                 // border: 1px solid #000;
-
             }
         }
     }
-
-    /* .team {
-        display: grid;
-        grid-template-columns: minmax(200px, 603px) minmax(263px, 524px);
-        justify-content: space-between;
-        // grid-template-columns: repeat(2, minmax(200px, 600px));
-        // grid-template-columns: 2fr 3fr;
-        gap: 50px;
-
-        &__text {
-            align-self: center;
-        }
-    } */
 
     .resources__grid {
         display: grid;
@@ -109,7 +90,7 @@ main {
         gap: 50px;
     }
 
-    .contact {
+/*     .contact {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 600px));
         gap: 50px;
@@ -117,7 +98,7 @@ main {
         &__title {
             align-self: center;
         }
-    }
+    } */
 
     .books {
         // display: grid;
